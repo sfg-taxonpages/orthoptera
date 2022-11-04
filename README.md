@@ -1,12 +1,16 @@
 # TaxonPages
 TaxonPages is a tool to serve taxon pages for TaxonWorks projects.
 
+## Status Warning
+TaxonPages software is in active development and changes are expected that will cause the early first-adopters' instances to require rebuilding by refreshing one's forked branch using `git pull`. A first _stable version_ is expected by Spring 2023.
+
 ## Usage
 
 1. Click on "Fork" button to create your own repository from this.
 2. Uncheck `Copy the setup branch only` and press `Save`
 3. After create your repo, go to `Settings > Pages`, on "Branch" select `gh-pages` and `/(root)`. Then press save
-4. After a couple of minutes, your public page should be available at `https://<yourusername>.github.io/taxonpages`
+4. Open `router.yml` file and change `base_url` to the name of your repository.
+5. After a couple of minutes, your public page should be available at `https://<your_user_name>.github.io/<your_repo_name>`
 
 ### Setup
 
