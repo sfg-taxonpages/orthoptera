@@ -1,0 +1,21 @@
+<template>
+  <div class="h-full">
+    <SectionLandscape />
+    <SectionData />
+    <hr />
+    <SectionDescription />
+    <SectionAuthor class="shadow-sm" />
+    <hr />
+
+    <SectionAnnouncements />
+    <SectionTerms />
+  </div>
+</template>
+<script setup>
+import SectionAuthor from './components/Section/SectionAuthor.vue'
+import SectionData from './components/Section/SectionData.vue'
+import SectionLandscape from './components/Section/SectionLandscape.vue'
+import SectionDescription from './components/Section/SectionDescription.vue'
+import SectionTerms from './components/Section/SectionTerms.vue'
+import SectionAnnouncements from './components/Section/SectionAnnouncements.vue'
+</script>
