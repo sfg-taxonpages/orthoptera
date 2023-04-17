@@ -17,7 +17,7 @@
 import AnimateNumber from '../../AnimateNumber.vue'
 defineProps({
   icon: {
-    type: Function,
+    type: Object,
     required: true
   },
   count: {

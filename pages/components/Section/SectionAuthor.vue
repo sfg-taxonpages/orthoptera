@@ -21,47 +21,53 @@
             It is open to contributions from anyone with specimen records and
             images.
           </p>
-        </div>
-        <h2>Authors</h2>
-        <ul class="my-4">
-          <li
-            v-for="item in AUTHORS"
-            :key="item.person"
-          >
-            <span class="block"
-              ><span class="font-bold">{{ item.person }}</span> -
-              {{ item.position }}</span
-            >
-            <span>{{ item.location }}</span>
-          </li>
-        </ul>
 
-        <div>
-          <h3>Major Contributors</h3>
-          <ul>
+          <h2>Authors</h2>
+          <ul class="my-4">
             <li
-              v-for="item in CONTRIBUTORS"
+              v-for="item in AUTHORS"
               :key="item.person"
             >
-              <span class="font-bold">{{ item.person }}</span> -
-              {{ item.location }}
+              <span class="block"
+                ><span class="font-bold">{{ item.person }}</span> -
+                {{ item.position }}</span
+              >
+              <span>{{ item.location }}</span>
             </li>
           </ul>
-        </div>
-        <div class="my-4">
-          <h3>Assistant editor</h3>
-          <ul>
-            <li
-              v-for="item in CONTRIBUTORS"
-              :key="item.person"
-            >
-              {{ item.person }} - {{ item.location }}
-            </li>
-          </ul>
+
+          <div>
+            <h3>Major Contributors</h3>
+            <ul>
+              <li
+                v-for="item in CONTRIBUTORS"
+                :key="item.person"
+              >
+                <span class="font-bold">{{ item.person }}</span> -
+                {{ item.location }}
+              </li>
+            </ul>
+          </div>
+          <div class="my-4">
+            <h3>Assistant editor</h3>
+            <ul>
+              <li
+                v-for="item in CONTRIBUTORS"
+                :key="item.person"
+              >
+                {{ item.person }} - {{ item.location }}
+              </li>
+            </ul>
+            <hr />
+            <p>
+              With the cooperation of
+              <a href="https://orthsoc.org/">The Orthopterists' Society</a>
+            </p>
+          </div>
         </div>
 
         <OSFLogo
-          class="hidden lg:block opacity-10 w-1/2 text-yellow-900 absolute right-0 bottom-12"
+          class="hidden lg:block opacity-10 w-1/2 text-yellow-900 absolute right-0 bottom-40"
         />
       </div>
     </div>

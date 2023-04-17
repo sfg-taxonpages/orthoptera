@@ -8,7 +8,7 @@
     <hr />
 
     <SectionAnnouncements />
-    <SectionTerms />
+    <SectionTerms class="drop-shadow" />
   </div>
 </template>
 <script setup>

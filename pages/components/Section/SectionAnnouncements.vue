@@ -29,7 +29,7 @@ const announcements = [
   },
   {
     title: 'OSF Grants 2023',
-    date: '2022-11-1',
+    date: '2023-01-03',
     text: `Information on call for grants' submissions can be found
               <a href="/taxonpages_osf/#/grants">here</a>`
   }

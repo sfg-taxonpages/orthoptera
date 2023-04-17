@@ -1,8 +1,13 @@
 <template>
   <section class="bg-base-foreground p-4 py-10">
     <div class="prose !container mx-auto">
+      <h2>Find out more</h2>
+      <p>
+        Find out more on this new public version of OSF. Learn how to
+        collaborate with the Orthoptera Species File project. Contact
+        information, technical details, and more are available at About.
+      </p>
       <h2>Format for referencing this website</h2>
-
       <p>
         When referencing this website, please use the following format:
         Cigliano, M.M., H. Braun, D.C. Eades & D. Otte. Orthoptera Species File
