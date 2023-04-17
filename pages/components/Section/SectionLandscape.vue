@@ -3,7 +3,7 @@
     <div class="relative">
       <img
         class="object-cover overflow-hidden h-[550px] w-full"
-        src="/images/dichroplus_maculipennis.jpg"
+        :src="dichroplusMaculipennis"
         alt="Dichroplus maculipennis"
       />
       <div class="bg-black bg-opacity-50 absolute h-full w-full top-0"></div>
@@ -24,4 +24,6 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import dichroplusMaculipennis from '../images/dichroplus_maculipennis.jpg'
+</script>
