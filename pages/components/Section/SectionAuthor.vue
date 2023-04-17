@@ -1,7 +1,7 @@
 <template>
   <section class="bg-base-foreground">
     <div class="container mx-auto p-4 sm:py-10 relative box-border">
-      <div class="prose !container">
+      <div class="prose !container dark:prose-invert">
         <div>
           <p>
             The Orthoptera Species File (OSF) is a taxonomic database of the
@@ -58,7 +58,7 @@
                 {{ item.person }} - {{ item.location }}
               </li>
             </ul>
-            <hr />
+            <hr class="border-b-base-border" />
             <p>
               With the cooperation of
               <a href="https://orthsoc.org/">The Orthopterists' Society</a>
@@ -67,7 +67,7 @@
         </div>
 
         <OSFLogo
-          class="hidden lg:block opacity-10 w-1/2 text-yellow-900 absolute right-0 bottom-40"
+          class="hidden lg:block opacity-10 w-[40rem] text-primary-color absolute right-0 bottom-48 dark:text-base-content"
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <section class="bg-base-foreground p-4 py-10">
-    <div class="prose !container mx-auto">
+    <div class="prose !container mx-auto dark:prose-invert">
       <h2>Find out more</h2>
       <p>
         Find out more on this new public version of OSF. Learn how to

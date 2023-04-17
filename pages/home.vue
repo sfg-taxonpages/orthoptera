@@ -2,10 +2,10 @@
   <div class="h-full">
     <SectionLandscape />
     <SectionData />
-    <hr />
+    <hr class="border-base-muted" />
     <SectionDescription />
     <SectionAuthor class="shadow-sm" />
-    <hr />
+    <hr class="border-base-muted" />
 
     <SectionAnnouncements />
     <SectionTerms class="drop-shadow" />
