@@ -3,9 +3,10 @@
     <div class="bg-base-foreground">
       <div class="container mx-auto">
         <div
-          class="md:h-64 max-h-max grid grid-cols-2 md:grid-cols-none md:grid-flow-col justify-between items-center py-10 md:py-0 px-4 gap-10"
+          class="max-h-max grid grid-cols-2 sm:grid-cols-4 grid-col auto-cols-fr xl:grid-flow-col lg:py-18 xl:py-28 py-10 gap-10"
         >
           <DataType
+            class="px-4"
             v-for="(item, key) in dataTypes"
             :key="key"
             :icon="item.icon"
