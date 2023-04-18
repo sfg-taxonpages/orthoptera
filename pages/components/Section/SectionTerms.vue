@@ -5,16 +5,17 @@
       <p>
         Find out more on this new public version of OSF. Learn how to
         collaborate with the Orthoptera Species File project. Contact
-        information, technical details, and more are available at About.
+        information, technical details, and more are available at
+        <RouterLink to="about">About</RouterLink>.
       </p>
       <h2>Format for referencing this website</h2>
       <p>
         When referencing this website, please use the following format:
-        Cigliano, M.M., H. Braun, D.C. Eades & D. Otte. Orthoptera Species File
-        &lt;
-        <a href="https://jlpereira.github.io/taxonpages_osf/"
-          >https://jlpereira.github.io/taxonpages_osf/</a
-        >
+        Cigliano, M.M., H. Braun, D.C. Eades & D. Otte. Orthoptera Species File.
+        [retrieval date]. &lt;
+        <a href="https://jlpereira.github.io/taxonpages_osf/">
+          https://jlpereira.github.io/taxonpages_osf/
+        </a>
         &gt;
       </p>
 
