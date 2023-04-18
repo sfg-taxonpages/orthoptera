@@ -55,7 +55,8 @@
                 v-for="item in ASSISTANT_EDITORS"
                 :key="item.person"
               >
-                {{ item.person }} - {{ item.location }}
+                <span class="font-bold">{{ item.person }}</span> -
+                {{ item.location }}
               </li>
             </ul>
             <hr class="border-b-base-border" />
