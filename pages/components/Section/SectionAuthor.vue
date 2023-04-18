@@ -52,7 +52,7 @@
             <h3>Assistant editor</h3>
             <ul>
               <li
-                v-for="item in CONTRIBUTORS"
+                v-for="item in ASSISTANT_EDITORS"
                 :key="item.person"
               >
                 {{ item.person }} - {{ item.location }}
