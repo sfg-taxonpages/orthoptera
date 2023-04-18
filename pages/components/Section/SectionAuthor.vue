@@ -59,7 +59,7 @@
               </li>
             </ul>
             <hr class="border-b-base-border" />
-            <p>
+            <p class="text-center">
               With the cooperation of
               <a href="https://orthsoc.org/">The Orthopterists' Society</a>
             </p>
