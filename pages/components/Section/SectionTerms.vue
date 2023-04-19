@@ -5,7 +5,8 @@
       <p>
         Find out more on this new public version of OSF. Learn how to
         collaborate with the Orthoptera Species File project. Contact
-        information, technical details, and more are available at About.
+        information, technical details, and more are available at
+        <RouterLink to="about">About.</RouterLink>
       </p>
       <h2>Format for referencing this website</h2>
       <p>
