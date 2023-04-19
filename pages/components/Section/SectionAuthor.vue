@@ -60,15 +60,24 @@
               </li>
             </ul>
             <hr class="border-b-base-border" />
-            <p class="text-center">
-              With the cooperation of
-              <a href="https://orthsoc.org/">The Orthopterists' Society</a>
-            </p>
+            <div class="flex flex-col justify-center items-center">
+              <OSFLogo
+                class="xl:hidden w-40 text-primary-color right-0 dark:text-base-content"
+              />
+              <p class="text-center">
+                With the cooperation of
+                <a
+                  class="whitespace-nowrap"
+                  href="https://orthsoc.org/"
+                  >The Orthopterists' Society</a
+                >
+              </p>
+            </div>
           </div>
         </div>
 
         <OSFLogo
-          class="hidden lg:block opacity-10 w-[40rem] text-primary-color absolute right-0 bottom-48 dark:text-base-content"
+          class="hidden xl:block opacity-10 w-[40rem] text-primary-color absolute right-0 bottom-48 dark:text-base-content"
         />
       </div>
     </div>

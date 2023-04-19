@@ -1,20 +1,20 @@
 # About
 
-## What is currently shown to the public:
+## What is currently shown to the public
 
 This first public version of OSF presented by TaxonPages and curated in a TaxonWorks instance, displays an overview of the most relevant information of the database. The design in panels provides the option to download the data in DwC/CSV formats.
 
 All data behind this site is served as JSON through calls to a TaxonWorks API.
 
-## What will be shown in the future:
+## What will be shown in the future
 
 New tabs displaying the complete information of the database, as well as different search and filter options, will be progressively developed evaluating the needs of the orthopterists’ community.
 
-## Link to the old OSF:
+## Link to the old OSF
 
 If you find apparent errors in this new version, please compare with the data in the old OSF powered by Species File Software, frozen since…. http://orthoptera.speciesfile.org/. Please notify us about any incorrectly migrated data.
 
-## Dig deeper in OSF:
+## Dig deeper in OSF
 
 The interfaces of TaxonWorks include a wide range of additional filtering and reporting functionalities. Please contact us (contact mail) if you need extended access to the data. Over time we expect this site to gradually mirror these extended functionalities of TaxonWorks.
 Contact
@@ -36,13 +36,13 @@ Their main task is adding published taxa, citations, and data to OSF, correcting
 
 The Project Director appoints committee members who have to be approved by the Board of the Orthopterists’ Society. The responsibilities of the committee are:
 
-2.1.- To grant awards from the endowment. The Orthoptera Species File Committee is responsible for determining the recipients of such funds. The Orthopterists' Society through the OSF has funds available for support of the database in amounts that vary from year to year. For more information, see grants.
+2.1.- To grant awards from the endowment. The Orthoptera Species File Committee is responsible for determining the recipients of such funds. The Orthopterists' Society through the OSF has funds available for support of the database in amounts that vary from year to year. For more information, see <RouterLink to="grants">grants</RouterLink>.
 
 2.2.- To review proposed changes at higher ranks or resolve discrepancies in the classification. In general this is done in accordance with taxonomic experts among the members of the Orthopterists’ Society.
 
 2.3.- To advise on the design of the database and future development tasks.
 
-#### OSF Governance Committee members are:
+#### OSF Governance Committee members are
 
 - María Marta Cigliano, División Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
 - Holger Braun, División Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
@@ -55,9 +55,9 @@ The Project Director appoints committee members who have to be approved by the B
 
 ### 3. Data Management Team and TaxonWorks development
 
-The Data Management Team, the [Species File Group](http://speciesfilegroup.org/), is based at the Illinois Natural History, University of in Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world, including the team at the Museo de La Plata, La Plata Argentina. The Species File Group is responsible for developing TaxonWorks, keeping the database online, and protecting its integrity.
+The Data Management Team, the [Species File Group](http://speciesfilegroup.org/), is based at the Illinois Natural History, University of Illinois at Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world, including the team at the Museo de La Plata, La Plata Argentina. The Species File Group is responsible for developing TaxonWorks, keeping the database online, and protecting its integrity.
 
-#### Orthopterists’ Society Community participation:
+#### Orthopterists’ Society Community participation
 
 The underlying database of this website was prepared in cooperation with the Orthopterists' Society. The decision to proceed in this manner was deliberate for two reasons: to provide continuity, and because of the magnitude of the job. The database should be a growing and evolving thing that continues past the careers of those who have responsibility for it from time to time. This database was started by Daniel Otte, enhanced first by Piotr Naskrecki and later by David Eades. Later, David Eades selected Maria Marta Cigliano, as his successor, approved by the OSF committee and the Board of the Orthopterists' Society.
 
@@ -85,4 +85,4 @@ Since March 2010, data entry responsibility has been transferred to the Museo de
 
 ### Funding
 
-Work on OSF is funded by an endowment to the Orthopterists’ Society through the University of Illinois Champaign Urbana. The endowment provides a relatively rare environment within the field of biodiversity informatics, i.e. fixed funding for long term research and development.
+Work on OSF is funded by an endowment to the Orthopterists’ Society through the University of Illinois, Champaign-Urbana. The endowment provides a relatively rare environment within the field of biodiversity informatics, i.e. fixed funding for long term research and development.
