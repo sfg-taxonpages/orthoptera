@@ -6,7 +6,9 @@
     />
     <div class="leading-3 text-center mt-5">
       <span class="font-medium text-2xl block line">
-        <AnimateNumber :number="count" />
+        <ClientOnly>
+          <AnimateNumber :number="count" />
+        </ClientOnly>
       </span>
       <span class="uppercase text-sm">{{ label }}</span>
     </div>
@@ -15,6 +17,7 @@
 
 <script setup>
 import AnimateNumber from '../../AnimateNumber.vue'
+
 defineProps({
   icon: {
     type: Object,

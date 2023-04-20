@@ -1,13 +1,7 @@
 <template>
   <section>
     <div class="relative box-border">
-      <img
-        class="object-cover overflow-hidden h-[550px] w-full"
-        :src="dichroplusMaculipennis"
-        alt="Dichroplus maculipennis"
-      />
-      <div class="bg-black bg-opacity-50 absolute h-full w-full top-0"></div>
-
+      <ImageCarrousel class="" />
       <div
         class="top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 absolute flex flex-col items-center box-border w-full md:w-auto p-4"
       >
@@ -29,5 +23,5 @@
 </template>
 
 <script setup>
-import dichroplusMaculipennis from '../images/dichroplus_maculipennis.jpg'
+import ImageCarrousel from '../ImageCarrousel.vue'
 </script>
