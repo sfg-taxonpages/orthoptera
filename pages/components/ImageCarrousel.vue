@@ -91,7 +91,6 @@ const currentImage = computed(() => images[currentIndex.value])
 
 onMounted(() => {
   intervalId = setInterval(() => {
-    console.log((currentIndex.value + 1) % images.length)
     currentIndex.value = (currentIndex.value + 1) % images.length
   }, props.duration)
 })
