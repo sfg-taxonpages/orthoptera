@@ -26,11 +26,10 @@
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
 import coryacrisAngustipennis from './images/coryacris_angustipennis.jpg'
 import dichroplusMaculipennis from './images/dichroplus_maculipennis.jpg'
-import neopediesNoroestensis from './images/neopedies_noroestensis.jpg'
-import parascopasObesus from './images/parascopas_obesus.jpg'
-import pediellaAncashensis from './images/pediella_ancashensis.jpg'
 import stenopolaPuncticeps from './images/stenopola_puncticeps.jpg'
 import zoniopodaTarsata from './images/zoniopoda_tarsata.jpg'
+import chromacrisSpeciosa from './images/chromacrisSpeciosa.jpg'
+import chibchacrisFernandezi from './images/chibchacrisFernandezi.jpg'
 
 const props = defineProps({
   duration: {
@@ -40,6 +39,18 @@ const props = defineProps({
 })
 
 const images = [
+  {
+    label: 'Chromacris speciosa',
+    src: chromacrisSpeciosa,
+    copyright: 'Cigliano, M.M',
+    otuId: 17262
+  },
+  {
+    label: 'Chibchacris Fernandezi',
+    src: chibchacrisFernandezi,
+    copyright: 'Cigliano, M.M',
+    otuId: 10351
+  },
   {
     label: 'Coryacris angustipennis',
     src: coryacrisAngustipennis,
@@ -51,24 +62,6 @@ const images = [
     copyright: 'Cigliano, M.M',
     src: dichroplusMaculipennis,
     otuId: 10278
-  },
-  {
-    label: 'Neopedies noroestensis',
-    copyright: 'Cigliano, M.M',
-    src: neopediesNoroestensis,
-    otuId: 10447
-  },
-  {
-    label: 'Parascopas obesus',
-    copyright: 'Cigliano, M.M',
-    src: parascopasObesus,
-    otuId: 11211
-  },
-  {
-    label: 'Pediella ancashensis',
-    copyright: 'Cigliano, Amédégnato, Pocco & Lange',
-    src: pediellaAncashensis,
-    otuId: 10321
   },
   {
     label: 'Stenopola puncticeps',
@@ -103,7 +96,7 @@ onBeforeUnmount(() => {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.75s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .fade-enter-from {
   opacity: 0;
