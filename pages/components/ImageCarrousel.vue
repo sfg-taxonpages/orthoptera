@@ -8,7 +8,7 @@
         alt="Dichroplus maculipennis"
       />
     </Transition>
-    <div class="bg-black bg-opacity-50 absolute h-full w-full top-0"></div>
+    <div class="bg-black bg-opacity-25 absolute h-full w-full top-0"></div>
     <div class="absolute bottom-2 right-4">
       <span class="z-10 text-white text-sm drop-shadow">
         <RouterLink
@@ -30,6 +30,10 @@ import stenopolaPuncticeps from './images/stenopola_puncticeps.jpg'
 import zoniopodaTarsata from './images/zoniopoda_tarsata.jpg'
 import chromacrisSpeciosa from './images/chromacrisSpeciosa.jpg'
 import chibchacrisFernandezi from './images/chibchacrisFernandezi.jpg'
+import chlorobaliusLeucoviridis from './images/chlorobaliusLeucoviridis.jpg'
+import aerotegminaVociferator from './images/aerotegminaVociferator.jpg'
+import liladownsiaFraile from './images/liladownsiaFraile.jpg'
+import lebinthusLuae from './images/lebinthusLuae.jpg'
 
 const props = defineProps({
   duration: {
@@ -39,6 +43,31 @@ const props = defineProps({
 })
 
 const images = [
+  {
+    label: 'Lebinthus luae',
+    copyright: 'Ming Kai Tan',
+    src: lebinthusLuae,
+    otuId: 25561
+  },
+  {
+    label: 'Liladownsia fraile',
+    copyright: 'Ricardo Mariño-Pérez',
+    src: liladownsiaFraile,
+    otuId: 10242
+  },
+  {
+    label: 'Aerotegmina vociferator',
+    copyright: 'Claudia Hemp',
+    src: aerotegminaVociferator,
+    otuId: 48040
+  },
+  {
+    label: 'Chlorobalius leucoviridis',
+    copyright: 'David Rentz',
+    src: chlorobaliusLeucoviridis,
+    otuId: 47940
+  },
+
   {
     label: 'Chromacris speciosa',
     src: chromacrisSpeciosa,
@@ -79,7 +108,7 @@ const images = [
 
 let intervalId
 
-const currentIndex = ref(0)
+const currentIndex = ref(Math.floor(Math.random() * images.length))
 const currentImage = computed(() => images[currentIndex.value])
 
 onMounted(() => {
