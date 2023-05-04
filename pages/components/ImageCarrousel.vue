@@ -33,6 +33,8 @@ import chibchacrisFernandezi from './images/chibchacrisFernandezi.jpg'
 import chlorobaliusLeucoviridis from './images/chlorobaliusLeucoviridis.jpg'
 import aerotegminaVociferator from './images/aerotegminaVociferator.jpg'
 import liladownsiaFraile from './images/liladownsiaFraile.jpg'
+import typophyllumInflatum from './images/typophyllumInflatum.jpg'
+import xenicolaDohrni from './images/xenicolaDohrni.jpg'
 import lebinthusLuae from './images/lebinthusLuae.jpg'
 
 const props = defineProps({
@@ -46,13 +48,13 @@ const images = [
   {
     label: 'Typophyllum inflatum',
     copyright: 'Holger Braun',
-    src: lebinthusLuae,
+    src: typophyllumInflatum,
     otuId: 48294
   },
   {
     label: 'Xenicola dohrni',
     copyright: 'Holger Braun',
-    src: lebinthusLuae,
+    src: xenicolaDohrni,
     otuId: 42335
   },
   {
