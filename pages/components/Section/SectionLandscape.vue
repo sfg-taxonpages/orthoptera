@@ -6,7 +6,12 @@
         class="top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 absolute flex flex-col items-center box-border w-full md:w-auto p-4"
       >
         <h1
-          class="text-2xl sm:text-3xl lg:text-4xl text-white text-center py-12 font-medium"
+          class="text-2xl sm:text-3xl lg:text-5xl text-white text-center font-medium"
+        >
+          Orthoptera Species File
+        </h1>
+        <h1
+          class="text-xl sm:text-2xl lg:text-3xl text-white text-center py-12 font-medium"
         >
           Taxonomic database of the world's Orthoptera (grasshoppers, katydids,
           crickets, and related insects)
