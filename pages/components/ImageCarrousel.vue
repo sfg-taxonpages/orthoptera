@@ -44,6 +44,18 @@ const props = defineProps({
 
 const images = [
   {
+    label: 'Typophyllum inflatum',
+    copyright: 'Holger Braun',
+    src: lebinthusLuae,
+    otuId: 48294
+  },
+  {
+    label: 'Xenicola dohrni',
+    copyright: 'Holger Braun',
+    src: lebinthusLuae,
+    otuId: 42335
+  },
+  {
     label: 'Lebinthus luae',
     copyright: 'Ming Kai Tan',
     src: lebinthusLuae,
