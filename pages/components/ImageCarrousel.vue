@@ -33,9 +33,10 @@ import chibchacrisFernandezi from './images/chibchacrisFernandezi.jpg'
 import chlorobaliusLeucoviridis from './images/chlorobaliusLeucoviridis.jpg'
 import aerotegminaVociferator from './images/aerotegminaVociferator.jpg'
 import liladownsiaFraile from './images/liladownsiaFraile.jpg'
+import lebinthusLuae from './images/lebinthusLuae.jpg'
 import typophyllumInflatum from './images/typophyllumInflatum.jpg'
 import xenicolaDohrni from './images/xenicolaDohrni.jpg'
-import lebinthusLuae from './images/lebinthusLuae.jpg'
+import acanthacrisRuficornisCitrina from './images/acanthacrisRuficornisCitrina.jpg'
 
 const props = defineProps({
   duration: {
@@ -45,6 +46,12 @@ const props = defineProps({
 })
 
 const images = [
+  {
+    label: 'Acanthacris ruficornis citrina',
+    copyright: 'Michel Lecoq',
+    src: acanthacrisRuficornisCitrina,
+    otuId: 13299
+  },
   {
     label: 'Typophyllum inflatum',
     copyright: 'Holger Braun',
