@@ -36,38 +36,48 @@ import IconCitation from '../Icon/iconCitation.vue'
 
 import DataType from './Data/DataType.vue'
 
+const TYPES = {
+  validSpecies: 'Valid species',
+  taxonNames: 'Taxon names',
+  projectSources: 'Project sources',
+  mediaSounds: 'Media sounds',
+  collectionObjects: 'Collection objects',
+  citations: 'Citations',
+  images: 'Images'
+}
+
 const dataTypes = shallowRef({
-  'Valid species': {
+  [TYPES.validSpecies]: {
     icon: IconOk,
     label: 'Valid species',
     count: 29410
   },
-  'Taxon names': {
+  [TYPES.taxonNames]: {
     icon: IconMicroscope,
     label: 'Scientific names',
     count: 47350
   },
-  'Project sources': {
+  [TYPES.projectSources]: {
     icon: IconReference,
     label: 'References',
     count: 15500
   },
-  Citations: {
+  [TYPES.citations]: {
     icon: IconCitation,
     label: 'Citations',
     count: 250000
   },
-  Images: {
+  [TYPES.images]: {
     icon: IconImage,
     label: 'Images',
     count: 107700
   },
-  'Media Sounds': {
+  [TYPES.mediaSounds]: {
     icon: IconAudio,
     label: 'Sound recordings',
     count: 2030
   },
-  'Collection objects': {
+  [TYPES.collectionObjects]: {
     icon: IconBug,
     label: 'Specimen records',
     count: 108000
@@ -84,5 +94,16 @@ makeAPIRequest('/stats').then((response) => {
   }
 
   triggerRef(dataTypes)
+})
+
+makeAPIRequest('/taxon_names.json', {
+  params: {
+    per: 1,
+    validity: true
+  }
+}).then(({ headers }) => {
+  dataTypes.value[TYPES.validSpecies].count = Number(
+    headers['pagination-total']
+  )
 })
 </script>
