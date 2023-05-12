@@ -99,7 +99,8 @@ makeAPIRequest('/stats').then((response) => {
 makeAPIRequest('/taxon_names.json', {
   params: {
     per: 1,
-    validity: true
+    validity: true,
+    rank: ['NomenclaturalRank::Iczn::SpeciesGroup::Species']
   }
 }).then(({ headers }) => {
   dataTypes.value[TYPES.validSpecies].count = Number(
