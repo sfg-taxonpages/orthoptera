@@ -98,7 +98,7 @@ const CONTRIBUTORS = [
   {
     person: 'Martina Eugenia Pocco',
     location:
-      'CEPAVE - CONICET, División Entomología.Museo de La Plata, Argentina'
+      'CEPAVE - CONICET, División Entomología, Museo de La Plata, Argentina'
   },
   {
     person: 'Hernán Lucas Pereira',
