@@ -96,6 +96,11 @@ const CONTRIBUTORS = [
     location: 'Museum of Comparative Zoology, Harvard University'
   },
   {
+    person: 'Martina Eugenia Pocco',
+    location:
+      'CEPAVE - CONICET, División Entomología.Museo de La Plata, Argentina'
+  },
+  {
     person: 'Hernán Lucas Pereira',
     location: 'CEPAVE - CONICET, Argentina'
   }
