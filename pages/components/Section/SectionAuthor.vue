@@ -39,6 +39,16 @@
               {{ item.location }}
             </li>
           </ul>
+          <h3>Developers</h3>
+          <ul>
+            <li
+              v-for="item in DEVELOPERS"
+              :key="item.person"
+            >
+              <span class="font-bold">{{ item.person }}</span> -
+              {{ item.location }}
+            </li>
+          </ul>
           <hr class="border-b-base-border" />
           <div class="flex flex-col justify-center items-center">
             <OSFLogo
@@ -99,16 +109,23 @@ const CONTRIBUTORS = [
     person: 'Martina Eugenia Pocco',
     location:
       'CEPAVE - CONICET, División Entomología, Museo de La Plata, Argentina'
-  },
-  {
-    person: 'Hernán Lucas Pereira',
-    location: 'CEPAVE - CONICET, Argentina'
   }
 ]
 
 const ASSISTANT_EDITORS = [
   {
     person: 'María Belén Cabrera',
+    location: 'División Entomología, Museo de La Plata, Argentina'
+  }
+]
+
+const DEVELOPERS = [
+  {
+    person: 'Hernán Lucas Pereira',
+    location: 'CEPAVE - CONICET, Argentina'
+  },
+  {
+    person: 'José Luis Pereira',
     location: 'División Entomología, Museo de La Plata, Argentina'
   }
 ]
