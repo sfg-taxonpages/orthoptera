@@ -5,10 +5,10 @@
         <div>
           <p>
             The Orthoptera Species File (OSF) is a taxonomic database of the
-            world’s Orthoptera (grasshoppers, katydids, crickets, and related
-            insects) both living and fossil. It has full taxonomic and synonymic
-            information for all taxa, with complete taxonomic references,
-            images, sound recordings, and specimen records.
+            world’s Orthoptera (grasshoppers, locusts, katydids, crickets, and
+            related insects) both living and fossil. It has full taxonomic and
+            synonymic information for all taxa, with complete taxonomic
+            references, images, sound recordings, and specimen records.
           </p>
           <p>
             The core purpose of the OSF is to provide a resource that makes

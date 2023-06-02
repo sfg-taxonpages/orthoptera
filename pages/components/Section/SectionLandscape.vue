@@ -13,8 +13,8 @@
         <h1
           class="text-xl sm:text-2xl lg:text-3xl text-white text-center py-12 font-medium"
         >
-          Taxonomic database of the world's grasshoppers, katydids, crickets,
-          and related insects
+          Taxonomic database of the world's grasshoppers, locusts, katydids,
+          crickets, and related insects
         </h1>
         <div class="p-4 bg-black bg-opacity-25 w-full max-w-lg box-border">
           <AutocompleteOtu
