@@ -96,7 +96,7 @@ const images = [
     otuId: 17262
   },
   {
-    label: 'Chibchacris Fernandezi',
+    label: 'Chibchacris fernandezi',
     src: chibchacrisFernandezi,
     copyright: 'Cigliano, M.M',
     otuId: 10351
