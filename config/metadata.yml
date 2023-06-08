@@ -1,5 +1,8 @@
-# If you want to add any metadata not present here, you can do so by adding the prefix meta_
 ---
-meta_keywords: "taxonpages, species, sfg, orthoptera, speciesfilegroup"
-meta_description: "The Orthoptera Species File is a taxonomic database of the world's Orthoptera (grasshoppers, katydids, crickets, and related insects), both living and fossil."
-meta_robots: "follow"
+metadata:
+  - name: description
+    content: The Orthoptera Species File (OSF) is a taxonomic database of the world’s Orthoptera (grasshoppers, katydids, crickets, and related insects) both living and fossil. It has full taxonomic and synonymic information for all taxa, with complete taxonomic references, images, sound recordings, and specimen records.
+  - name: keywords
+    content: taxonpages, species, sfg, orthoptera, speciesfilegroup
+  - name: robots
+    content: follow
