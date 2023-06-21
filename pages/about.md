@@ -24,38 +24,36 @@ Please send comments or questions about the database to María Marta Cigliano (e
 
 OSF is managed at three different levels, each having their own tasks and responsibilities:
 
-1.  Editorial Board/Authors
-2.  Governance Committee
-3.  Data Management Team
+1.  the Editorial Board
+2.  the Governance Committee
+3.  the Data Management Team
 
-### 1. Editorial board/Authors
+### 1. Editorial Board
 
-Their main task is adding published taxa, citations, and data to OSF, correcting errors. The Editorial board is based at the Museo de La Plata, Universidad Nacional de La Plata, Argentina
+The Editorial Board includes authors whose main task is to add new data based on published literature, images, and other information, as well as to correct errors in the database.
 
-### 2. OSF Governance Committee
+### 2. Governance Committee
 
-The Project Director appoints committee members who have to be approved by the Board of the Orthopterists’ Society. The responsibilities of the committee are:
+The Governance Committee members are appointed by the President of the Orthopterists' Society. The responsibilities of the committee are:
 
-2.1.- To grant awards from the endowment. The Orthoptera Species File Committee is responsible for determining the recipients of such funds. The Orthopterists' Society through the OSF has funds available for support of the database in amounts that vary from year to year. For more information, see <RouterLink to="grants">grants</RouterLink>.
+To grant awards from the endowment (currently about US$30,000 each year). The Orthopterists' Society through the OSF has funds available for support of database work in amounts that vary from year to year. See <RouterLink to="grants">grant application guidelines</RouterLink> for more informations.
 
-2.2.- To review proposed changes at higher ranks or resolve discrepancies in the classification. In general this is done in accordance with taxonomic experts among the members of the Orthopterists’ Society.
+To review proposed changes to higher ranks within the database. The Orthoptera Species File Committee is responsible for determining the recipients of such funds.
 
-2.3.- To advise on the design of the database and future development tasks.
+####  Committee members are
 
-#### OSF Governance Committee members are
-
-- María Marta Cigliano, División Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
-- Holger Braun, División Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
+- María Marta Cigliano, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
+- Holger Braun, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
 - Sigfrid Ingrisch, Zoologisches Forschungsinstitut und Museum Alexander Koenig, Adenauerallee 160, D-53113 Bonn, Germany
 - Michel Lecoq, Past President, Orthopterists' Society; Manager, The Ted Cohn Research Fund; Subject Editor, Journal of Orthoptera Research; Web: http://mlecoq34.wix.com/michellecoqFrance
+- David Rentz, Canberra, Australia
 - Hugh Rowell, Chalet Oreïna, 3961 Ayer, Switzerland
-- Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University
-  College Station, TX 77843-2475, USA
-- Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d'Histoire naturelle, CNRS, Sorbonne Université, EPHE, 57 rue Cuvier, CP 50, 75005 Paris, France
+- Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University, College Station, TX 77843-2475, USA
+- Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d'Histoire naturelle, , 57 rue Cuvier, CP 50, 75005 Paris, France
 
 ### 3. Data Management Team and TaxonWorks development
 
-The Data Management Team, the [Species File Group](http://speciesfilegroup.org/), is based at the Illinois Natural History, University of Illinois at Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world, including the team at the Museo de La Plata, La Plata Argentina. The Species File Group is responsible for developing TaxonWorks, keeping the database online, and protecting its integrity.
+The Data Management Team, the [Species File Group](http://speciesfilegroup.org/about), is based at the Illinois Natural History, University of in Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world. The Species File Group is responsible for developing TaxonWorks, keeping the database online, protecting its integrity.
 
 #### Orthopterists’ Society Community participation
 
@@ -73,7 +71,7 @@ Members of the Orthopterists' Society doing serious work with Orthoptera are inv
 
 ### Editorial policy
 
-The classification and nomenclature used for the database should reflect the most recent published information. If a change in classification reflects a subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the editor may delay entering the change until a predominant opinion emerges from multiple authors, prior to discussing the issue with the OSF Governance Committee. However, each conflicting citation should be entered with a note giving the opinion of that author.
+The classification and nomenclature of the database reflect the most recent published information. If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author.
 
 ## History
 
