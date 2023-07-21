@@ -50,80 +50,80 @@ const images = [
     label: 'Acanthacris ruficornis citrina',
     copyright: 'Michel Lecoq',
     src: acanthacrisRuficornisCitrina,
-    otuId: 13299
+    otuId: 13369
   },
   {
     label: 'Typophyllum inflatum',
     copyright: 'Holger Braun',
     src: typophyllumInflatum,
-    otuId: 48294
+    otuId: 48504
   },
   {
     label: 'Xenicola dohrni',
     copyright: 'Holger Braun',
     src: xenicolaDohrni,
-    otuId: 42335
+    otuId: 42521
   },
   {
     label: 'Lebinthus luae',
     copyright: 'Ming Kai Tan',
     src: lebinthusLuae,
-    otuId: 25561
+    otuId: 25653
   },
   {
     label: 'Liladownsia fraile',
     copyright: 'Ricardo Mariño-Pérez',
     src: liladownsiaFraile,
-    otuId: 10242
+    otuId: 10296
   },
   {
     label: 'Aerotegmina vociferator',
     copyright: 'Claudia Hemp',
     src: aerotegminaVociferator,
-    otuId: 48040
+    otuId: 48245
   },
   {
     label: 'Chlorobalius leucoviridis',
     copyright: 'David Rentz',
     src: chlorobaliusLeucoviridis,
-    otuId: 47940
+    otuId: 48144
   },
 
   {
     label: 'Chromacris speciosa',
     src: chromacrisSpeciosa,
     copyright: 'Cigliano, M.M',
-    otuId: 17262
+    otuId: 17350
   },
   {
     label: 'Chibchacris fernandezi',
     src: chibchacrisFernandezi,
     copyright: 'Cigliano, M.M',
-    otuId: 10351
+    otuId: 10406
   },
   {
     label: 'Coryacris angustipennis',
     src: coryacrisAngustipennis,
     copyright: 'Cigliano, M.M',
-    otuId: 17272
+    otuId: 17360
   },
   {
     label: 'Dichroplus maculipennis',
     copyright: 'Cigliano, M.M',
     src: dichroplusMaculipennis,
-    otuId: 10278
+    otuId: 10332
   },
   {
     label: 'Stenopola puncticeps',
     copyright: 'Cigliano, M.M',
     src: stenopolaPuncticeps,
-    otuId: 14255
+    otuId: 14331
   },
   {
     label: 'Zoniopoda tarsata',
     copyright: 'Cigliano, M.M',
     src: zoniopodaTarsata,
-    otuId: 17336
+    otuId: 17424
   }
 ]
 
