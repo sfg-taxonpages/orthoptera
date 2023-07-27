@@ -1,89 +1,86 @@
----
-title: About 
-focal_taxon: Plecoptera
-focal_taxon_common_name: stoneflies
-old_website: http://plecoptera.speciesfile.org
-contact_email: user@example.com
-copyright: All content is CC 0 so that it maybe be shared throughout the world in places like Wikipedia.
-citation: Project collaborative. 2022. Website title. Available at https://example.com.
----
-
 # About
-_{tag line}_
 
-## Overview
-The {focal_taxon} Species file offers a community-curated collection of richly-cited and annotated data on the taxonomy of Earth’s {focal_taxon_common_name}. Data found here come from a collaboratively compiled database originating in an instance of [TaxonWorks](https://taxonworks.org) managed by the [Species File Group](https://speciesfilegroup). See [Contribute](#contribute) for how you can participate. This site is built using TaxonPages, [learn more and get help](). For more on how this site is built please see the [Technical](#technical) section.
+## What is currently shown to the public
 
-## Gaps as Opportunity
-The Earth's biodiversity is vast, the data captured to describe it are minimal in comparison, but still immense. All projects of this nature contain gaps, i.e. opportunities for collaboration on future work, grants, and research. Known gaps in this project include {an incomplete catalog of type-material (important specimens that are linked to the names given to species}, {species names published after XXXX}, {biological associations}, {distributions from X} and more. [Contact us](#contact) if you would like to help us address these, in particular we'd like to prioritize { choose from list above }.
+This first public version of OSF presented by TaxonPages and curated in a TaxonWorks instance, displays an overview of the most relevant information of the database. The design in panels provides the option to download the data in DwC/CSV formats.
+
+All data behind this site is served as JSON through calls to a TaxonWorks API.
+
+## What will be shown in the future
+
+New tabs displaying the complete information of the database, as well as different search and filter options, will be progressively developed evaluating the needs of the orthopterists’ community.
+
+## Link to the old OSF
+
+If you find apparent errors in this new version, please compare with the data in the old OSF powered by Species File Software, frozen since…. http://orthoptera.speciesfile.org/. Please notify us about any incorrectly migrated data.
+
+## Dig deeper in OSF
+
+The interfaces of TaxonWorks include a wide range of additional filtering and reporting functionalities. Please contact us (contact mail) if you need extended access to the data. Over time we expect this site to gradually mirror these extended functionalities of TaxonWorks.
+Contact
+Please send comments or questions about the database to María Marta Cigliano (email) or Holger Braun (email) , or its technical to Hernán Pereira (email) or José Pereira (email).
+
+## Governance
+
+OSF is managed at three different levels, each having their own tasks and responsibilities:
+
+1.  the Editorial Board
+2.  the Governance Committee
+3.  the Data Management Team
+
+### 1. Editorial Board
+
+The Editorial Board includes authors whose main task is to add new data based on published literature, images, and other information, as well as to correct errors in the database.
+
+### 2. Governance Committee
+
+The Governance Committee members are appointed by the President of the Orthopterists' Society. The responsibilities of the committee are:
+
+To grant awards from the endowment (currently about US$30,000 each year). The Orthopterists' Society through the OSF has funds available for support of database work in amounts that vary from year to year. See <RouterLink to="grants">grant application guidelines</RouterLink> for more informations.
+
+To review proposed changes to higher ranks within the database. The Orthoptera Species File Committee is responsible for determining the recipients of such funds.
+
+####  Committee members are
+
+- María Marta Cigliano, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
+- Holger Braun, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
+- Sigfrid Ingrisch, Zoologisches Forschungsinstitut und Museum Alexander Koenig, Adenauerallee 160, D-53113 Bonn, Germany
+- Michel Lecoq, Past President, Orthopterists' Society; Manager, The Ted Cohn Research Fund; Subject Editor, Journal of Orthoptera Research; Web: http://mlecoq34.wix.com/michellecoqFrance
+- David Rentz, Canberra, Australia
+- Hugh Rowell, Chalet Oreïna, 3961 Ayer, Switzerland
+- Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University, College Station, TX 77843-2475, USA
+- Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d'Histoire naturelle, , 57 rue Cuvier, CP 50, 75005 Paris, France
+
+### 3. Data Management Team and TaxonWorks development
+
+The Data Management Team, the [Species File Group](http://speciesfilegroup.org/about), is based at the Illinois Natural History, University of in Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world. The Species File Group is responsible for developing TaxonWorks, keeping the database online, protecting its integrity.
+
+#### Orthopterists’ Society Community participation
+
+The underlying database of this website was prepared in cooperation with the Orthopterists' Society. The decision to proceed in this manner was deliberate for two reasons: to provide continuity, and because of the magnitude of the job. The database should be a growing and evolving thing that continues past the careers of those who have responsibility for it from time to time. This database was started by Daniel Otte, enhanced first by Piotr Naskrecki and later by David Eades. Later, David Eades selected Maria Marta Cigliano, as his successor, approved by the OSF committee and the Board of the Orthopterists' Society.
+
+Members of the Orthopterists' Society doing serious work with Orthoptera are invited to participate in making this website and database better. In most cases this will mean correcting or adding information fitting the individual's specific research interest. Participation can be at various levels.
+
+- Communicate comments, suggestions and corrections to Maria Marta Cigliano (send mail).
+- Notify about publications to Holger Braun (send mail) for incorporation of data into the database.
+- Submit images and/or sound recordings for inclusion in the database. The source will be acknowledged when users view images or listen to sound recordings.
+- Experts of a group are welcome to:
+  - Review the information shown for the group and note any problems.
+  - Either edit the database over the Internet to fix any problems, or else communicate the problems to Maria Marta Cigliano. Changes to the database should conform to the editorial policy.
+  - Develop new information such as interactive keys. There are many useful ways the project could be expanded. This final level of participation requires some knowledge of computer programming and a serious time commitment. Contact Maria Marta Cigliano if you are interested.
+
+### Editorial policy
+
+The classification and nomenclature of the database reflect the most recent published information. If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author.
 
 ## History
-_Our old website is now a read-only resource available at [https://{focal_taxon}.archive.speciesfile.org](https://{focal_taxon}.archive.speciesfile.org)._
 
-{How did the Species File Group come to be (shared history)}. How did this specific SF group come to be? When did we start our efforts? What are the historically important catalogs behind these data.}
+Daniel Otte, from the Academy of Natural Sciences of Philadelphia, USA, developed the initial version of the database, mostly on data from the Zoological Record. His first volume of the Orthoptera Species File was published in 1994 to cover crickets (Grylloidea). Subsequent volumes continued through volume eight in 2000 to complete all Orthoptera. The collaboration between Otte and Piotr Naskrecki led to the first version online of the Orthoptera Species File in 1997. Naskrecki and Otte also published “An Illustrated Catalog of Orthoptera, Vol. I. Tettigonioidea (Katydids or bush-crickets)” in CD-ROM format, in 1999.
 
-As of {yyyy-mm-dd} all data in the former Species File Websites were frozen and shortly thereafter migrated to TaxonWorks. As with all migrations of this nature the process is both lossy (e.g. some data could not be mapped with certainty) and improved (e.g. semantics of the new models have more precision and clarity).  The old website remains an excellent resource for fact-checking this migration. If you spot something that needs attention, please see [contribute](about#contribute)
+David Eades, the founder of the Species File Group at Illinois Natural History Survey, USA, currently retired, with the approval of Otte and Naskrecki submitted a proposal to the Orthopterists' Society that established the basis for version two of the Orthoptera Species File. Data from the Tettigonioidea CD-ROM was imported to a new database, the incipient Species File software, which provided cross checking of data. Import of all data from previous versions of the Orthoptera Species File was completed in July 2002. The much more complex programming required for editing the data was developed gradually while the data was being imported. New data based on the Zoological Record was brought current in September 2004. Programming to support keys and specimen data was completed in 2005. Also in 2005, Eades and Paul Brock, from the Natural History Museum, London, initiated the Phasmida Species File. Other Species Files were developed, such as Aphid Species File, Cockroach Species File, Coreoidea Species File, Lygaeoidea Species File, Psocodea Species File, Mantodea Species File, and Plecoptera Species File.
 
-## Team
-### Contribute
-_Projects of this nature require expertise in many different areas, not only on the taxa being treated. If you can imagine a way to contribute we'd love to hear about it._
+Since March 2010, data entry responsibility has been transferred to the Museo de La Plata, Universidad Nacional de La Plata, Argentina, under the leadership of Maria Marta Cigliano and Holger Braun as the principal author.
 
-* Join the {focal_taxon} Species File regular support meetings at { details if these exist }./
-* Enquire about joining the researchers building this Species File: [{ProjectManager}](mailto:address@example.com).
-* Provide new data or to identify a problem with existing data: [{ProjectManager}](mailto:address@example.com). {Issue tracker option}.
-* Report a technical bug (e.g. broken link or button) within TaxonPages: [TaxonPages' issue tracker](https://github.com/SpeciesFileGroup/taxonpages/issues/new?assignees=&labels=bug&projects=&template=bug.yml&title=%5BBug%5D%3A+)
-* TaxonWorks and TaxonPages are open-source efforts that are [opportunities for you and others to join](https://docs.taxonworks.org/develop/contributing.html) to request new features, report bugs, or discuss use among other things.
+### Funding
 
-### Contributors
-|name|role|
-|----|----|
-| First name Last Name | Author 
-| First name Last Name | Author |
-| First name Last Name | Editor |
-| First name Last Name | Developer |
-| First name Last Name | Community contributor |
-
-### Governance
-About our group structure, how the rules behind joining and participating are set.
-
-### Support
-_This Species File functionality and content is serviced in part by the Species File Group._
-
-* {Society Logo } - Society  
-* Science Foundation {requires disclaimer}
-* An organization other entity
-
-#### Funding
-Through the generous support of ... we ...
-Or Funding needed to publish our latest information ... or address data gaps
-
-### The Species File Group
-
-#### The TaxonWorks Community
-The work revealed on this website comes from many community meetings, many hours of research, a lot of software and data model development. This includes considerable effort to support impactful culture change and potentially enhanced standards of practice for data capture, sharing resources, knowledge, and workload. Please join the our community via the [Species File Group's regular Wednesday meetings](https://speciesfilegroup.org/events.html) to add your voice to our community and learn more.
-
-## Extended access
-_A goal of these pages is to ensure that the underlying data behind them are accessible in their digital format. By diversifying the ways the data are accessible (e.g. on the web page, in JSON, in Darwin Core standard), we increase the opportunities to both spot errors and provide new services and portals._
-
-* Researchers working on this project use their rich, multi-faceted access to the data via TaxonWorks' interfaces (e.g. filters, reporting, downloads). Access requires a project account, see [Contacts][#contact].
-* Data behind individual panels can be seen via the *SiteMap* functionality.
-* Each page offers an option to download a *DarwinCore formatted table* containing all data for this taxon and its children.
-* Panel data (each section on a page) and other data not available here are accessible via a [TaxonWorks API](https://api.taxonworks.org) at [https://sfg.taxonworks.org/api/v1](https://sfg.taxonworks.org/api/v1),
-* Core taxonomic data are exported to and available at the [Catalogue of Life]({https://link_to_root_taxon_page}) and its [associated API](https://link_to_api_for_pertinent_dataset).
-
-## Technical
-Want to create your own site? This website is built completely using open-source software. Data are curated in a TaxonWorks project then shared via a TaxonWorks API.  TaxonPages accesses these shared data and renders it into the panels and pages you see here.
-
-## Related resources
-_Find out more about {focal_taxon} at these websites._
-
-### Websites
-* [site name]{site url}
-* [site name]{site url}
-
-### References
-* Citation. [Citation link](doi)
-
-## Terms of Use (Copyright Guidance)
-Except where noted, content on this site licensed under the terms of the [Creative Commons Attribution License (CC-BY)](LINK). Images and other media, except where noted, please use under the [CC BY](LINK) license.
-
+Work on OSF is funded by an endowment to the Orthopterists’ Society through the University of Illinois, Champaign-Urbana. The endowment provides a relatively rare environment within the field of biodiversity informatics, i.e. fixed funding for long term research and development.
