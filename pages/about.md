@@ -32,30 +32,38 @@ OSF is managed at three different levels, each having their own tasks and respon
 
 The Editorial Board includes authors whose main task is to add new data based on published literature, images, and other information, as well as to correct errors in the database.
 
+### Editorial policy
+
+The classification and nomenclature of the database reflect the most recent published information. If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author.
+
 ### 2. Governance Committee
 
-The Governance Committee members are appointed by the President of the Orthopterists' Society. The responsibilities of the committee are:
+The Governance Committee members are appointed by the Director of the database with the approval of the President of the Orthopterists’ Society. The responsibilities of the committee are as follows
 
-To grant awards from the endowment (currently about US$30,000 each year). The Orthopterists' Society through the OSF has funds available for support of database work in amounts that vary from year to year. See <RouterLink to="grants">grant application guidelines</RouterLink> for more informations.
+- Grant awards from the endowment (currently about US$30,000 each year). The Orthopterists’ Society, through the OSF, has funds available for supporting database work in varying amounts from year to year. For more information please refer to the <RouterLink to="grants">grant application guidelines</RouterLink>. The Orthoptera Species File Committee is responsible for determining the recipients of such funds.
+- Review proposed changes to higher ranks within the database.
+- Provide advise on design of database and priorities for tasks
 
-To review proposed changes to higher ranks within the database. The Orthoptera Species File Committee is responsible for determining the recipients of such funds.
+#### Committee members are
 
-####  Committee members are
-
-- María Marta Cigliano, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
-- Holger Braun, Division Entomología, Museo de la Plata, Paseo del Bosque S/N, 1900 La Plata, Argentina
-- Sigfrid Ingrisch, Zoologisches Forschungsinstitut und Museum Alexander Koenig, Adenauerallee 160, D-53113 Bonn, Germany
-- Michel Lecoq, Past President, Orthopterists' Society; Manager, The Ted Cohn Research Fund; Subject Editor, Journal of Orthoptera Research; Web: http://mlecoq34.wix.com/michellecoqFrance
-- David Rentz, Canberra, Australia
-- Hugh Rowell, Chalet Oreïna, 3961 Ayer, Switzerland
-- Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University, College Station, TX 77843-2475, USA
-- Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d'Histoire naturelle, , 57 rue Cuvier, CP 50, 75005 Paris, France
+- María Marta Cigliano, Division Entomología, Museo de la Plata, CEPAVE-CONICET, La Plata, Argentina
+- Holger Braun, Division Entomología, Museo de la Plata, La Plata, Argentina
+- Claudia Hemp, University of Bayreuth, Bayreuth, Germany
+- Sigfrid Ingrisch, Zoologisches Forschungsinstitut und Museum Alexander Koenig, Bonn, Germany
+- Michel Lecoq, Past President, Orthopterists’ Society; Manager, The Ted Cohn Research Fund; Subject Editor, Journal of Orthoptera Research; France
+- Hugh Rowell, Ayer, Switzerland
+- Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d’Histoire naturelle, Paris, France
+- Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University, College Station, Texas, USA
 
 ### 3. Data Management Team and TaxonWorks development
 
 The Data Management Team, the [Species File Group](http://speciesfilegroup.org/about), is based at the Illinois Natural History, University of in Champaign-Urbana, Illinois, part of the Prarie Research Institute has core members and collaborators around the world. The Species File Group is responsible for developing TaxonWorks, keeping the database online, protecting its integrity.
 
-#### Orthopterists’ Society Community participation
+#### The TaxonWorks Community
+
+The work revealed on this website comes from many community meetings, many hours of research, a lot of software and data model development. This includes considerable effort to support impactful culture change and potentially enhanced standards of practice for data capture, sharing resources, knowledge, and workload. Please join the our community via the [Species File Group's regular Wednesday meetings](https://speciesfilegroup.org/events.html) to add your voice to our community and learn more.
+
+## Orthopterists’ Society Community participation
 
 The underlying database of this website was prepared in cooperation with the Orthopterists' Society. The decision to proceed in this manner was deliberate for two reasons: to provide continuity, and because of the magnitude of the job. The database should be a growing and evolving thing that continues past the careers of those who have responsibility for it from time to time. This database was started by Daniel Otte, enhanced first by Piotr Naskrecki and later by David Eades. Later, David Eades selected Maria Marta Cigliano, as his successor, approved by the OSF committee and the Board of the Orthopterists' Society.
 
@@ -68,10 +76,6 @@ Members of the Orthopterists' Society doing serious work with Orthoptera are inv
   - Review the information shown for the group and note any problems.
   - Either edit the database over the Internet to fix any problems, or else communicate the problems to Maria Marta Cigliano. Changes to the database should conform to the editorial policy.
   - Develop new information such as interactive keys. There are many useful ways the project could be expanded. This final level of participation requires some knowledge of computer programming and a serious time commitment. Contact Maria Marta Cigliano if you are interested.
-
-### Editorial policy
-
-The classification and nomenclature of the database reflect the most recent published information. If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author.
 
 ## History
 
