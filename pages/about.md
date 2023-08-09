@@ -16,9 +16,14 @@ If you find apparent errors in this new version, please compare with the data in
 
 ## Dig deeper in OSF
 
-The interfaces of TaxonWorks include a wide range of additional filtering and reporting functionalities. Please contact us (contact mail) if you need extended access to the data. Over time we expect this site to gradually mirror these extended functionalities of TaxonWorks.
-Contact
-Please send comments or questions about the database to María Marta Cigliano (email) or Holger Braun (email) , or its technical to Hernán Pereira (email) or José Pereira (email).
+The TaxonWorks interfaces encompass a wide range of additional filtering and reporting functionalities.
+If you require extended access to the data, please reach out to us at [cigliano@fcnym.unlp.edu.ar;
+braun@fcnym.unlp.edu.ar]. For guidance on using filters in TaxonWorks, refer to the help document
+available at [https://docs.google.com/document/d/1Ser_9uG31b-zL4YcPJrafZ19BnNCenh-S2zBcsIjLio/].
+Over time, we anticipate that this site will progressively incorporate the extended functionalities present
+in TaxonWorks. If you have any comments or questions regarding the database, you can contact María
+Marta Cigliano (cigliano@fcnym.unlp.edu.ar) or Holger Braun (braun@fcnym.unlp.edu.ar), or for
+technical inquiries, reach out to Hernán Pereira (email) or José Pereira (email).
 
 ## Governance
 
