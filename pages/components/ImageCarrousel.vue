@@ -24,7 +24,6 @@
 <script setup>
 import { onMounted, ref, computed } from 'vue'
 import coryacrisAngustipennis from './images/coryacris_angustipennis.jpg'
-import dichroplusMaculipennis from './images/dichroplus_maculipennis.jpg'
 import stenopolaPuncticeps from './images/stenopola_puncticeps.jpg'
 import zoniopodaTarsata from './images/zoniopoda_tarsata.jpg'
 import chromacrisSpeciosa from './images/chromacrisSpeciosa.jpg'
@@ -105,12 +104,6 @@ const images = [
     src: coryacrisAngustipennis,
     copyright: 'Cigliano, M.M',
     otuId: 17360
-  },
-  {
-    label: 'Dichroplus maculipennis',
-    copyright: 'Cigliano, M.M',
-    src: dichroplusMaculipennis,
-    otuId: 10332
   },
   {
     label: 'Stenopola puncticeps',
