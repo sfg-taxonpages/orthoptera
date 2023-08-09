@@ -1,17 +1,16 @@
 <template>
   <div class="overflow-hidden h-[550px] w-full">
-    <Transition name="fade">
-      <img
-        class="object-cover overflow-hidden h-[550px] w-full absolute"
-        :key="currentImage.src"
-        :src="currentImage.src"
-        alt="Dichroplus maculipennis"
-      />
-    </Transition>
+    <img
+      class="object-cover overflow-hidden h-[550px] w-full absolute"
+      :key="currentImage.src"
+      :src="currentImage.src"
+      alt="Dichroplus maculipennis"
+    />
     <div class="bg-black bg-opacity-25 absolute h-full w-full top-0"></div>
     <div class="absolute bottom-2 right-4">
       <span class="z-10 text-white text-sm drop-shadow">
         <RouterLink
+          v-if="currentImage.otuId"
           class="text-white"
           :to="{ name: 'otus-id', params: { id: currentImage.otuId } }"
         >
@@ -23,7 +22,7 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import coryacrisAngustipennis from './images/coryacris_angustipennis.jpg'
 import dichroplusMaculipennis from './images/dichroplus_maculipennis.jpg'
 import stenopolaPuncticeps from './images/stenopola_puncticeps.jpg'
@@ -127,19 +126,11 @@ const images = [
   }
 ]
 
-let intervalId
-
-const currentIndex = ref(Math.floor(Math.random() * images.length))
-const currentImage = computed(() => images[currentIndex.value])
+const currentIndex = ref(null)
+const currentImage = computed(() => images[currentIndex.value] || {})
 
 onMounted(() => {
-  intervalId = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % images.length
-  }, props.duration)
-})
-
-onBeforeUnmount(() => {
-  clearInterval(intervalId)
+  currentIndex.value = Math.floor(Math.random() * images.length + 1)
 })
 </script>
 
