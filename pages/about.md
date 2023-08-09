@@ -17,13 +17,13 @@ If you find apparent errors in this new version, please compare with the data in
 ## Dig deeper in OSF
 
 The TaxonWorks interfaces encompass a wide range of additional filtering and reporting functionalities.
-If you require extended access to the data, please reach out to us at [cigliano@fcnym.unlp.edu.ar;
-braun@fcnym.unlp.edu.ar]. For guidance on using filters in TaxonWorks, refer to the help document
+If you require extended access to the data, please reach out to us at [<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />;
+<address-maker class="font-medium"  :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />]. For guidance on using filters in TaxonWorks, refer to the help document
 available at [https://docs.google.com/document/d/1Ser_9uG31b-zL4YcPJrafZ19BnNCenh-S2zBcsIjLio/].
 Over time, we anticipate that this site will progressively incorporate the extended functionalities present
 in TaxonWorks. If you have any comments or questions regarding the database, you can contact María
-Marta Cigliano (cigliano@fcnym.unlp.edu.ar) or Holger Braun (braun@fcnym.unlp.edu.ar), or for
-technical inquiries, reach out to Hernán Pereira (email) or José Pereira (email).
+Marta Cigliano (<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />) or Holger Braun (<address-maker class="font-medium" :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />), or for
+technical inquiries, reach out to Hernán Pereira (<address-maker class="font-medium" :items="['ellocodelassembler', 'gmail', 'com']" />) or José Pereira (<address-maker class="font-medium" :items="['pepelui', 'outlook', 'com']" />).
 
 ## Governance
 
@@ -74,8 +74,8 @@ The underlying database of this website was prepared in cooperation with the Ort
 
 Members of the Orthopterists' Society doing serious work with Orthoptera are invited to participate in making this website and database better. In most cases this will mean correcting or adding information fitting the individual's specific research interest. Participation can be at various levels.
 
-- Communicate comments, suggestions and corrections to Maria Marta Cigliano (send mail).
-- Notify about publications to Holger Braun (send mail) for incorporation of data into the database.
+- Communicate comments, suggestions and corrections to Maria Marta Cigliano (send mail <address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />).
+- Notify about publications to Holger Braun (send mail <address-maker class="font-medium" :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />) for incorporation of data into the database.
 - Submit images and/or sound recordings for inclusion in the database. The source will be acknowledged when users view images or listen to sound recordings.
 - Experts of a group are welcome to:
   - Review the information shown for the group and note any problems.
