@@ -12,7 +12,7 @@ New tabs displaying the complete information of the database, as well as differe
 
 ## Link to the old OSF
 
-If you find apparent errors in this new version, please compare with the data in the old OSF powered by Species File Software, frozen since…. http://orthoptera.speciesfile.org/. Please notify us about any incorrectly migrated data.
+If you find apparent errors in this new version, please compare with the data in the old OSF powered by Species File Software, frozen since August, 14 2023. http://orthoptera.archive.speciesfile.org/. Please notify us about any incorrectly migrated data.
 
 ## Dig deeper in OSF
 
