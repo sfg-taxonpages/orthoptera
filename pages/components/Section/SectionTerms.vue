@@ -13,8 +13,8 @@
         When referencing this website, please use the following format:
         Cigliano, M.M., H. Braun, D.C. Eades & D. Otte. Orthoptera Species File
         [retrieval date]. &lt;
-        <a href="https://jlpereira.github.io/taxonpages_osf/">
-          https://jlpereira.github.io/taxonpages_osf/
+        <a :href="project_url">
+          {{ project_url }}
         </a>
         &gt;
       </p>
@@ -34,3 +34,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const { project_url } = __APP_ENV__
+</script>
