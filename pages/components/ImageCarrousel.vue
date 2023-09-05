@@ -48,74 +48,74 @@ const images = [
     label: 'Acanthacris ruficornis citrina',
     copyright: 'Michel Lecoq',
     src: acanthacrisRuficornisCitrina,
-    otuId: 13369
+    otuId: 819322
   },
   {
     label: 'Typophyllum inflatum',
     copyright: 'Holger Braun',
     src: typophyllumInflatum,
-    otuId: 48504
+    otuId: 850435
   },
   {
     label: 'Xenicola dohrni',
     copyright: 'Holger Braun',
     src: xenicolaDohrni,
-    otuId: 42521
+    otuId: 848543
   },
   {
     label: 'Lebinthus luae',
     copyright: 'Ming Kai Tan',
     src: lebinthusLuae,
-    otuId: 25653
+    otuId: 831633
   },
   {
     label: 'Liladownsia fraile',
     copyright: 'Ricardo Mariño-Pérez',
     src: liladownsiaFraile,
-    otuId: 10296
+    otuId: 816243
   },
   {
     label: 'Aerotegmina vociferator',
     copyright: 'Claudia Hemp',
     src: aerotegminaVociferator,
-    otuId: 48245
+    otuId: 850176
   },
   {
     label: 'Chlorobalius leucoviridis',
     copyright: 'David Rentz',
     src: chlorobaliusLeucoviridis,
-    otuId: 48144
+    otuId: 850075
   },
 
   {
     label: 'Chromacris speciosa',
     src: chromacrisSpeciosa,
     copyright: 'Cigliano, M.M',
-    otuId: 17350
+    otuId: 823304
   },
   {
     label: 'Chibchacris fernandezi',
     src: chibchacrisFernandezi,
     copyright: 'Cigliano, M.M',
-    otuId: 10406
+    otuId: 816353
   },
   {
     label: 'Coryacris angustipennis',
     src: coryacrisAngustipennis,
     copyright: 'Cigliano, M.M',
-    otuId: 17360
+    otuId: 823314
   },
   {
     label: 'Stenopola puncticeps',
     copyright: 'Cigliano, M.M',
     src: stenopolaPuncticeps,
-    otuId: 14331
+    otuId: 820284
   },
   {
     label: 'Zoniopoda tarsata',
     copyright: 'Cigliano, M.M',
     src: zoniopodaTarsata,
-    otuId: 17424
+    otuId: 823378
   }
 ]
 
@@ -123,7 +123,7 @@ const currentIndex = ref(null)
 const currentImage = computed(() => images[currentIndex.value] || {})
 
 onMounted(() => {
-  currentIndex.value = Math.floor(Math.random() * images.length + 1)
+  currentIndex.value = Math.floor(Math.random() * images.length)
 })
 </script>
 
