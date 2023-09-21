@@ -1,25 +1,20 @@
 <template>
   <section>
     <div class="relative box-border">
-      <ImageCarrousel class="" />
+      <ImageCarrousel />
       <div
-        class="top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 absolute flex flex-col items-center box-border w-full md:w-auto p-4"
+        class="flex flex-col justify-center items-center w-full h-full gap-4 absolute top-0"
       >
-        <h1
-          class="text-2xl sm:text-3xl lg:text-5xl text-white text-center font-medium"
+        <span class="text-4xl font-medium text-white">{{ project_name }}</span>
+        <span class="text-xl text-white"
+          >Taxonomic database of the world's grasshoppers, locusts, katydids,
+          crickets, and related insects</span
         >
-          Orthoptera Species File
-        </h1>
-        <h1
-          class="text-xl sm:text-2xl lg:text-3xl text-white text-center py-12 font-medium"
-        >
-          Taxonomic database of the world's grasshoppers, locusts, katydids,
-          crickets, and related insects
-        </h1>
         <div class="p-4 bg-black bg-opacity-25 w-full max-w-lg box-border">
           <AutocompleteOtu
             autofocus
             class="w-full"
+            placeholder="Search by taxon name..."
           />
         </div>
       </div>
@@ -29,4 +24,5 @@
 
 <script setup>
 import ImageCarrousel from '../ImageCarrousel.vue'
+const { project_name } = __APP_ENV__
 </script>
