@@ -3,7 +3,7 @@
     <div class="relative box-border">
       <ImageCarrousel />
       <div
-        class="flex flex-col justify-center items-center w-full h-full gap-4 absolute top-0"
+        class="flex flex-col justify-center items-center w-full h-full gap-4 bg-black bg-opacity-25 absolute top-0"
       >
         <span class="text-4xl font-medium text-white">{{ project_name }}</span>
         <span class="text-xl text-white"
