@@ -106,5 +106,7 @@ makeAPIRequest('/taxon_names.json', {
   dataTypes.value[TYPES.validSpecies].count = Number(
     headers['pagination-total']
   )
+
+  triggerRef(dataTypes)
 })
 </script>
