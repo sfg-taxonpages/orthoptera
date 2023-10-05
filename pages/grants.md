@@ -6,7 +6,7 @@ The Orthopterists' Society in cooperation with the Illinois Natural History Surv
 
 Grants are available for a project as defined by the applicant. The project must involve benefit to the Orthoptera Species File. The usual benefit is the addition of images (photographs of the habitus and diagnostic details of type specimens, other reliably identified museum specimens, living individuals in natural habitats), sound recordings, and/or geo-referenced specimen records. Any proposal that solely focuses on fieldwork or other systematic research without direct benefits to OSF will not be considered. Projects may be proposed for periods of one to three years.
 
-Funding for 2024 will be for the amount of US$ 45.000. All requested information must be submitted by October 30, 2023 to receive full consideration.
+For 2024 the total amount shared among the projects will be US$ 45.000. All requested information must be submitted by October 30, 2023 to receive full consideration.
 
 The proposals should include:
 
