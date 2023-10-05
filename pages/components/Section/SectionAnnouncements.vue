@@ -5,6 +5,17 @@
       <div class="flex gap-4 flex-col">
         <VCard>
           <VCardContent>
+            <h3 class="mt-2 mb-0">OSF Grants 2024</h3>
+            <span class="text-base-soft">2023-05-10</span>
+            <p>
+              Information on call for grants' submissions can be found
+              <RouterLink to="grants">here</RouterLink>
+            </p>
+          </VCardContent>
+        </VCard>
+
+        <VCard>
+          <VCardContent>
             <h3 class="mt-2 mb-0">OSF Powered by TaxonWorks</h3>
             <span class="text-base-soft">2023-04-17</span>
             <p>
@@ -21,17 +32,6 @@
               />) if you need extended access to the data. Over time we expect
               this site to gradually mirror these extended functionalities of
               TaxonWorks.
-            </p>
-          </VCardContent>
-        </VCard>
-
-        <VCard>
-          <VCardContent>
-            <h3 class="mt-2 mb-0">OSF Grants 2023</h3>
-            <span class="text-base-soft">2023-01-03</span>
-            <p>
-              Information on call for grants' submissions can be found
-              <RouterLink to="grants">here</RouterLink>
             </p>
           </VCardContent>
         </VCard>

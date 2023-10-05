@@ -1,41 +1,12 @@
 # Grants
 
-The OSF grants committee received and evaluated twenty-two proposals by applicants from fifteen countries (Australia, Austria, Brazil, Cameroon, Colombia, Cyprus, Germany, India, Malaysia, Nepal, Pakistan, Portugal, Singapore, The Netherlands, and United States of America). Twelve proposals for the sum of U$s 47,000 listed below were funded. These have been selected based on the amount of data (images, specimen records, and sounds) expected to be added to the Orthoptera Species File. Also considered was the candidates’ expertise on the studied group, the quality of the proposal and its relation to a taxonomic research project, it was taken also in consideration if the project is related to a region of the world where Orthoptera are understudied, as well as it has an adequate budget. As an exception one project related to the Cockroach Species File has been included.
-
-## Projects funded for 2023
-
-1. Aqilah, Amira Muhammad (Universiti Malaya, Kuala Lumpur).
-   Title: igitalilzation of Orthoptera Types from museum collections in Malaysia.
-2. Cadena, Oscar (Universidad Distrital Francisco José de Caldas, Colombia).
-   Title: tudy of Melanoplinae (Acrididae), Mecopodinae and Hexacentrinae (Tettigoniidae) of high Andean forests and paramos of the eastern mountain range of Colombia - Extension of the project to areas not covered, mainly in the south of the eastern range, and the central range of the Colombian Andes.
-3. Denadai de Campos, Lucas (Universidade de São Paulo, Brazil).
-   Title: Photographic database of Gryllinae and Oecanthinae crickets (Ensifera, Grylloidea) type specimens deposited in the Academy of Natural Sciences of Philadelphia (ANSP).
-4. Hopkins, Heidi (Ithaca College, New York, USA).
-   Title: hotographing primary Blattodea types held in Australian museums, and searching for an elusive Australian desert cockroach.
-5. Ivković, Slobodan (Universitätsring 15 Trier, Germany) & Hovart, L. (Austria).
-   Title: Taxonomy, bioacoustics and distribution of Orthoptera in the Western Balkans (North Macedonia II).
-6. Jaiswara Ranjana (Panjab Universtity, India).
-   Title: Photography of male and female genitalia of Gryllinae (Orthoptera,Grylloidea) type specimens at NHM, London.
-7. Mariño Pérez, Ricardo (Museum of Zoology, University of Michigan, USA).
-   Title: Caelifera type collection of Bernice P. Bishop Museum (BPBM) in Orthoptera Species File.
-8. Oumarou-Ngoute, Charly (Faculty of Sciences, University of Douala, Cameroon).
-   Title: The grasshopper (Orthoptera, Caelifera) diversity of Mount Bamboutos in the Cameroon Volcanic Line.
-9. Subedi, Madan (Agriculture and Forestry University, Ghyalchok, Gorkha, Nepal).
-   Title: Photographic records of the groundhoppers (Orthoptera: Tetrigidae) of the unexplored wetlands of Ramaroshan, Accham, Nepal.
-10. Szinwelski, Neucir (State University of Western Paraná, Brazil).
-    Title: The Orthoptera from Paraná: Reducing Orthoptera biodiversity gaps in a threatened Atlantic Forest hotspot, and adding in OSF data from one of the most diverse state in Brazil.
-11. Tan, Ming Kai (National University of Singapore).
-    Title: Bridging the Sampling Gaps for Orthopterans in Southeast Asia: From Malay Peninsula to Borneo.
-    Zahid, Sundus (Mansehra. KPK. Pakistan).
-    Title: Digitization of (Pakistani and Sri Lankan) type Specimens deposited in the Natural History Museum (NHM), London.
-
 ## Grant application guidelines:
 
 The Orthopterists' Society in cooperation with the Illinois Natural History Survey provides funding for work in support of the Orthoptera Species File. Members of the Orthopterists' Society are invited to apply. Applications should be sent to María Marta Cigliano (cigliano@fcnym.unlp.edu.ar).
 
 Grants are available for a project as defined by the applicant. The project must involve benefit to the Orthoptera Species File. The usual benefit is the addition of images (photographs of the habitus and diagnostic details of type specimens, other reliably identified museum specimens, living individuals in natural habitats), sound recordings, and/or geo-referenced specimen records. Any proposal that solely focuses on fieldwork or other systematic research without direct benefits to OSF will not be considered. Projects may be proposed for periods of one to three years.
 
-Funding for 2024 will be announced in September. All requested information must be submitted by October 30, 2023 to receive full consideration.
+Funding for 2024 will be for the amount of US$ 45.000. All requested information must be submitted by October 30, 2023 to receive full consideration.
 
 The proposals should include:
 
