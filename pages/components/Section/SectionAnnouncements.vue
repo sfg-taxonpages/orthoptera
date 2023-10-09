@@ -5,8 +5,20 @@
       <div class="flex gap-4 flex-col">
         <VCard>
           <VCardContent>
+            <h3 class="mt-2 mb-0">Incorrect Maps</h3>
+            <span class="text-base-soft">2023-10-09</span>
+            <p>
+              At genus level and above, all taxa that occur in French Guiana are
+              also shown to occur in France and viceversa. The Species File
+              Group are trying to solve this error.
+            </p>
+          </VCardContent>
+        </VCard>
+
+        <VCard>
+          <VCardContent>
             <h3 class="mt-2 mb-0">OSF Grants 2024</h3>
-            <span class="text-base-soft">2023-05-10</span>
+            <span class="text-base-soft">2023-10-05</span>
             <p>
               Information on call for grants' submissions can be found
               <RouterLink to="grants">here</RouterLink>
