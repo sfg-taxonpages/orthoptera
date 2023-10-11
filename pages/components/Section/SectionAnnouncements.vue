@@ -8,9 +8,10 @@
             <h3 class="mt-2 mb-0">Incorrect Maps</h3>
             <span class="text-base-soft">2023-10-09</span>
             <p>
-              At genus level and above, all taxa that occur in French Guiana are
-              also shown to occur in France and viceversa. The Species File
-              Group are trying to solve this error.
+              At the genus level and above, all taxa that occur in overseas
+              departments and territories are erroneously also shown to occur in
+              the respective administrative country authority and viceversa
+              (e.g. French Guiana/France). This issue will be solved ASAP.
             </p>
           </VCardContent>
         </VCard>
