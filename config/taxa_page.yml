@@ -1,0 +1,21 @@
+taxa_page_overview:
+  overview:
+    panels:
+      - - - panel:gallery
+          - panel:type
+          - panel:type-specimen
+          - panel:nomenclature
+          - panel:nomenclature-references
+  
+        - - panel:map
+          - panel:descendants
+          - panel:content
+          - panel:statistics
+  specimen_records:
+    rank_group: ['SpeciesGroup']
+    panels:
+      - - - panel:specimen-records
+  iNaturalist:
+    rank_group: ['GenusGroup', 'SpeciesGroup']
+    panels:
+      - - - panel:inaturalist
