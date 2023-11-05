@@ -1,4 +1,4 @@
-taxa_page_overview:
+taxa_page:
   overview:
     panels:
       - - - panel:gallery
@@ -6,7 +6,7 @@ taxa_page_overview:
           - panel:type-specimen
           - panel:nomenclature
           - panel:nomenclature-references
-  
+
         - - panel:map
           - panel:descendants
           - panel:content
