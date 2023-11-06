@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import { ref, onBeforeMount } from 'vue'
+import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
 const props = defineProps({
@@ -84,7 +84,7 @@ function loadObservations(parameters = {}) {
     })
 }
 
-onBeforeMount(() => {
+onMounted(() => {
   loadObservations({ per_page: props.perPage })
 })
 </script>
