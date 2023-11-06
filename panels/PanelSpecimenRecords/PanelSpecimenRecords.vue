@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onBeforeMount } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { makeAPIRequest } from '@/utils'
 import GalleryThumbnailList from '@/components/Gallery/GalleryThumbnailList.vue'
 
@@ -91,7 +91,7 @@ function getDepositoryData(data) {
     : `<span>${institutionCode}</span>`
 }
 
-onBeforeMount(() => {
+onMounted(() => {
   isLoading.value = true
   makeAPIRequest
     .get(`/otus/${props.otuId}/inventory/dwc.json`)
