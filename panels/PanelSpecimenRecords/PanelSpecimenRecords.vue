@@ -4,23 +4,55 @@
     <VCardContent :class="isLoading && 'min-h-[6rem]'">
       <VSpinner v-if="isLoading" />
       <template
-        v-for="item in specimenRecords"
+        v-for="item in typeSpecimenRecords"
         :key="item.id"
       >
-        <div class="flex justify-between items-center text-sm px-2 py-4">
+        <div class="flex justify-between flex-col gap-2 text-sm px-2 py-4">
           <div class="flex flex-col">
-            <span>{{ item.typeStatus }}</span>
-            <span
-              class="text- text-base-soft"
-              v-html="
-                [getDepositoryData(item), getLocalityData(item)].join('; ')
-              "
-            />
+            <span class="font-medium">{{ item.typeStatus }}</span>
+            <span v-html="makeSpecimenLabel(item)" />
           </div>
           <GalleryThumbnailList
             v-if="item.associatedMedia"
             :images="item.associatedMedia"
-            class="flex-col lg:flex-row gap-2"
+            class="flex-row flex-wrap gap-2"
+            @select-index="
+              (index) => setCurrentImages(item.associatedMedia, index)
+            "
+          />
+        </div>
+        <hr />
+      </template>
+      <ImageViewer
+        v-if="isViewerVisible"
+        :images="currentImages"
+        :index="currentIndex"
+        :next="currentImages.length - 1 > currentIndex"
+        :previous="currentIndex > 0"
+        @select-index="(index) => (currentIndex = index)"
+        @next="() => currentIndex++"
+        @previous="() => currentIndex--"
+        @close="() => (isViewerVisible = false)"
+      />
+    </VCardContent>
+  </VCard>
+  <VCard v-if="specimenRecords.length">
+    <VCardHeader>Specimen records</VCardHeader>
+    <VCardContent :class="isLoading && 'min-h-[6rem]'">
+      <VSpinner v-if="isLoading" />
+      <template
+        v-for="item in specimenRecords"
+        :key="item.id"
+      >
+        <div class="flex flex-col justify-between text-sm px-2 py-4 gap-2">
+          <div class="flex flex-col">
+            <span>{{ item.typeStatus }}</span>
+            <span v-html="makeSpecimenLabel(item)" />
+          </div>
+          <GalleryThumbnailList
+            v-if="item.associatedMedia"
+            :images="item.associatedMedia"
+            class="lg:flex-row gap-2 flex-wrap max-w-xl"
             @select-index="
               (index) => setCurrentImages(item.associatedMedia, index)
             "
@@ -64,6 +96,13 @@ const dwcRecords = ref([])
 const specimenRecords = computed(() =>
   dwcRecords.value.filter(
     (item) =>
+      item.dwc_occurrence_object_type === 'CollectionObject' && !item.typeStatus
+  )
+)
+
+const typeSpecimenRecords = computed(() =>
+  dwcRecords.value.filter(
+    (item) =>
       item.dwc_occurrence_object_type === 'CollectionObject' && item.typeStatus
   )
 )
@@ -81,6 +120,19 @@ function getLocalityData(data) {
   return area
 }
 
+function makeSpecimenLabel(item) {
+  return [
+    getCountAndSex(item),
+    getDepositoryData(item),
+    item.catalogNumber,
+    getLocalityData(item),
+    getCollector(item),
+    getCoordinates(item)
+  ]
+    .filter(Boolean)
+    .join('; ')
+}
+
 function getDepositoryData(data) {
   const { institutionCode, institutionID } = data
 
@@ -89,6 +141,20 @@ function getDepositoryData(data) {
   return institutionID
     ? `<a href="${institutionID}" target="_blank">${institutionCode}</a>`
     : `<span>${institutionCode}</span>`
+}
+
+function getCountAndSex({ individualCount, sex }) {
+  return sex
+    ? `${individualCount} ${sex}`
+    : `${individualCount} specimen${individualCount > 1 ? 's' : ''}`
+}
+
+function getCollector({ recordedBy }) {
+  return recordedBy
+}
+
+function getCoordinates({ verbatimCoordinates }) {
+  return verbatimCoordinates?.split(' ').join(', ')
 }
 
 onMounted(() => {
