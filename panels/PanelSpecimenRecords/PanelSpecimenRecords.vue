@@ -126,8 +126,8 @@ function makeSpecimenLabel(item) {
     getDepositoryData(item),
     item.catalogNumber,
     getLocalityData(item),
-    getCollector(item),
-    getCoordinates(item)
+    getCoordinates(item),
+    getCollector(item)
   ]
     .filter(Boolean)
     .join('; ')
