@@ -52,7 +52,7 @@
           <GalleryThumbnailList
             v-if="item.associatedMedia"
             :images="item.associatedMedia"
-            class="lg:flex-row gap-2 flex-wrap max-w-xl"
+            class="lg:flex-row gap-2 flex-wrap"
             @select-index="
               (index) => setCurrentImages(item.associatedMedia, index)
             "
@@ -150,11 +150,13 @@ function getCountAndSex({ individualCount, sex }) {
 }
 
 function getCollector({ recordedBy }) {
-  return recordedBy
+  return recordedBy ? `Col. ${recordedBy}` : ''
 }
 
 function getCoordinates({ verbatimCoordinates }) {
-  return verbatimCoordinates?.split(' ').join(', ')
+  const coordinates = verbatimCoordinates?.split(' ').join(', ')
+
+  return coordinates ? `(${coordinates})` : ''
 }
 
 onMounted(() => {
