@@ -91,20 +91,5 @@ David Eades, the founder of the Species File Group at Illinois Natural History S
 Since March 2010, data entry responsibility has been transferred to the Museo de La Plata, Universidad Nacional de La Plata, Argentina, under the leadership of Maria Marta Cigliano and Holger Braun as the principal author.
 
 ### Funding
-## Terms of use (Copyright guidance)
-
-<div class="flex items-center gap-2">
-  <a
-    class="min-w-fit"
-    href="{{ app:copyright_image_link }}"
-  >
-    <img 
-      src="{{ app:copyright_image }}" 
-      alt="copyright" 
-      class="m-0"
-    >
-  </a>
-  <span>{{ app:copyright_text }}</span>
-</div>
 
 Work on OSF is funded by an endowment to the Orthopterists’ Society through the University of Illinois, Champaign-Urbana. The endowment provides a relatively rare environment within the field of biodiversity informatics, i.e. fixed funding for long term research and development.
