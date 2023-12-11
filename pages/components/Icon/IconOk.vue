@@ -1,24 +1,22 @@
 <template>
   <svg
-    width="37"
-    height="37"
-    viewBox="0 0 37 37"
-    fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 14 14"
   >
-    <g clip-path="url(#clip0_318_33)">
-      <path
-        d="M18.5 0C8.28276 0 0 8.28276 0 18.5C0 28.7172 8.28276 37 18.5 37C28.7172 37 37 28.7172 37 18.5C37 8.28276 28.7172 0 18.5 0ZM18.5 4.01977C26.4972 4.01977 32.978 10.5048 32.978 18.5C32.978 26.4952 26.4972 32.978 18.5 32.978C10.5028 32.978 4.02202 26.4952 4.02202 18.5C4.02205 10.5048 10.5028 4.01977 18.5 4.01977ZM25.5888 9.71521L14.8664 20.4399L11.3886 16.9621L7.97631 20.3721L11.4541 23.8499L14.889 27.2848L18.299 23.8725L29.0237 13.1501L25.5888 9.71521Z"
+    <g
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="m4 8l2.05 1.64a.48.48 0 0 0 .4.1a.5.5 0 0 0 .34-.24L10 4" />
+      <circle
+        cx="7"
+        cy="7"
+        r="6.5"
       />
     </g>
-    <defs>
-      <clipPath id="clip0_318_33">
-        <rect
-          width="37"
-          height="37"
-          fill="white"
-        />
-      </clipPath>
-    </defs>
   </svg>
 </template>

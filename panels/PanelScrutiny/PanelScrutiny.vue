@@ -4,7 +4,13 @@
     <VCardContent>
       <ul class="text-sm">
         <li v-for="item in scrutinies">
-          {{ item.value }}
+          {{ item.value
+          }}{{ item.value[item.value.length - 1] === '.' ? '' : '.' }}
+          {{
+            item.citations
+              ?.map((citation) => citation.citation_source_body)
+              .join('; ')
+          }}
         </li>
       </ul>
     </VCardContent>
@@ -36,6 +42,20 @@ onMounted(() => {
     .get('/data_attributes.json', { params: payload })
     .then(async (response) => {
       scrutinies.value = response.data
+      scrutinies.value.forEach((scrutiny) => getCitationsFor(scrutiny))
     })
 })
+
+function getCitationsFor(scrutiny) {
+  const payload = {
+    citation_object_id: scrutiny.id,
+    citation_object_type: 'DataAttribute'
+  }
+
+  makeAPIRequest
+    .get('/citations.json', { params: payload })
+    .then((response) => {
+      scrutiny.citations = response.data
+    })
+}
 </script>
