@@ -30,7 +30,7 @@ The OSF grants committee received and evaluated fourteen proposals by applicants
 
 ## Grant application guidelines
 
-The Orthopterists' Society in cooperation with the Illinois Natural History Survey provides funding for work in support of the Orthoptera Species File. Members of the Orthopterists' Society are invited to apply. Applications should be sent to María Marta Cigliano (cigliano@fcnym.unlp.edu.ar).
+The Orthopterists' Society in cooperation with the Illinois Natural History Survey provides funding for work in support of the Orthoptera Species File. Members of the Orthopterists' Society are invited to apply. Applications should be sent to María Marta Cigliano (<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />).
 
 Grants are available for a project as defined by the applicant. The project must involve benefit to the Orthoptera Species File. The usual benefit is the addition of images (photographs of the habitus and diagnostic details of type specimens, other reliably identified museum specimens, living individuals in natural habitats), sound recordings, and/or geo-referenced specimen records. Any proposal that solely focuses on fieldwork or other systematic research without direct benefits to OSF will not be considered. Projects may be proposed for periods of one to three years.
 
