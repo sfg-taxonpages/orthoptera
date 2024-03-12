@@ -164,6 +164,16 @@ onMounted(() => {
   makeAPIRequest
     .get(`/otus/${props.otuId}/inventory/dwc.json`)
     .then(async (response) => {
+      response.data.sort((a, b) => {
+        if (a.associatedMedia && !b.associatedMedia) {
+          return -1
+        }
+        if (!a.associatedMedia && b.associatedMedia) {
+          return 1
+        }
+
+        return 0
+      })
       for (let i = 0; i < response.data.length; i++) {
         const item = response.data[i]
 
