@@ -6,7 +6,9 @@
       </span>
     </VCardHeader>
     <VCardContent :class="isLoading && 'min-h-[6rem]'">
-      <VSpinner v-if="isLoading" />
+      <ClientOnly>
+        <VSpinner v-if="isLoading" />
+      </ClientOnly>
 
       <template v-if="!isLoading">
         <div
