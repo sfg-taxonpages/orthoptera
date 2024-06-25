@@ -21,3 +21,8 @@ taxa_page:
     rank_group: ['GenusGroup', 'SpeciesGroup']
     panels:
       - - - panel:inaturalist
+  xenocanto:
+    label: 'xeno-canto'
+    rank_group: ['GenusGroup', 'SpeciesGroup']
+    panels:
+      - - - panel:xeno-canto
