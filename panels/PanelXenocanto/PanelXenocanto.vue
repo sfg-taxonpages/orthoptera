@@ -26,6 +26,8 @@
               <VTableHeaderCell class="w-2">Taxon</VTableHeaderCell>
               <VTableHeaderCell class="w-12">Country</VTableHeaderCell>
               <VTableHeaderCell>Locality</VTableHeaderCell>
+              <VTableHeaderCell>Author</VTableHeaderCell>
+              <VTableHeaderCell class="w-24">License</VTableHeaderCell>
               <VTableHeaderCell class="w-2">Page</VTableHeaderCell>
             </VTableHeaderRow>
           </VTableHeader>
@@ -43,6 +45,19 @@
               <VTableBodyCell>{{ getRecordTaxonName(item) }}</VTableBodyCell>
               <VTableBodyCell>{{ item.cnt }}</VTableBodyCell>
               <VTableBodyCell>{{ item.loc }}</VTableBodyCell>
+              <VTableBodyCell>{{ item.rec }}</VTableBodyCell>
+              <VTableBodyCell>
+                <a
+                  :href="item.lic"
+                  target="_blank"
+                >
+                  <img
+                    v-if="isCreativeCommons(item.lic)"
+                    :src="getCCLicenseFromUrl(item.lic)"
+                  />
+                  <span v-else>{{ item.lic }}</span></a
+                >
+              </VTableBodyCell>
               <VTableBodyCell>
                 <a
                   :href="item.url"
@@ -114,4 +129,21 @@ onMounted(() => {
     })
     .finally(() => (isLoading.value = false))
 })
+
+function makeCCImgUrl(license) {
+  return `http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/${license}.svg`
+}
+
+function isCreativeCommons(url) {
+  return url.includes('creativecommons')
+}
+
+function getCCLicenseFromUrl(url) {
+  const regex = /licenses\/([a-z-]+)\/\d+\.\d+/
+  const match = url.match(regex)
+
+  const [_, license] = match
+
+  return makeCCImgUrl(license)
+}
 </script>
