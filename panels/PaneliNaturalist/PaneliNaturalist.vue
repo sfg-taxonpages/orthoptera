@@ -1,6 +1,6 @@
 <template>
   <VCard>
-    <VCardHeader>Observations</VCardHeader>
+    <VCardHeader>iNaturalist - Observations</VCardHeader>
     <VCardContent>
       <VSpinner v-if="isLoading" />
       <div
