@@ -1,16 +1,22 @@
 <template>
   <VCard>
     <VCardHeader>Observations</VCardHeader>
-    <VCardContent>
-      <VSpinner v-if="isLoading" />
+    <VCardContent class="min-h-[6rem]">
+      <ClientOnly>
+        <VSpinner v-if="isLoading" />
+      </ClientOnly>
+
       <div
-        class="flex flex-row flex-wrap gap-2 mb-4"
-        :class="isLoading && 'min-h-[3.5rem]'"
+        v-if="!isLoading && !observations.length"
+        class="text-xl text-center my-8 w-full"
       >
+        No records found.
+      </div>
+
+      <div class="flex flex-row flex-wrap gap-2">
         <div
           v-for="observation in observations"
           :key="observation.id"
-          class="flex flex-row flex-wrap gap-2"
         >
           <a
             v-if="observation?.observation_photos[0]"
@@ -24,6 +30,8 @@
         </div>
       </div>
       <VPagination
+        v-if="observations.length"
+        class="mt-4"
         v-model="pagination.page"
         :total="pagination.total_results"
         :per="pagination.per_page"
