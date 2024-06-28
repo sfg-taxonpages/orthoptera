@@ -39,7 +39,7 @@ The Editorial Board includes authors whose main task is to add new data based on
 
 ### Editorial policy
 
-The classification and nomenclature of the database reflect the most recent published information following the rules of the International Code of Zoological Nomenclature (ICZN). If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author.
+The classification and nomenclature of the database reflect the most recent published information following the rules of the International Code of Zoological Nomenclature (ICZN). If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author. Annual archival copies readily available at [Catalogue of life](https://www.catalogueoflife.org/).
 
 ### 2. Governance Committee
 
