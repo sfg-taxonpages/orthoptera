@@ -75,7 +75,7 @@ function loadObservations(parameters = {}) {
   axios
     .get(`https://api.inaturalist.org/v1/observations`, {
       params: {
-        q: props.taxon.expanded_name,
+        taxon_name: props.taxon.expanded_name,
         ...parameters
       }
     })
