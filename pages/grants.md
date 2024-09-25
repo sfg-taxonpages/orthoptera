@@ -50,6 +50,8 @@ The proposals should include:
 
 Preference will be given in relation to the amount of data added into OSF, i.e. the expected contribution to the considered taxa (dependent on already existing data). A detailed list of the species that are poorly illustrated in OSF and the data that is expected to be added as a result of the grant is highly recommended to be included in the proposal. Proposals involving images and sound recordings taken in the field will be funded depending on the “biogeographical value”, i.e. surveys in under-collected areas will be preferred over similar activities in well-worked terrain. Preference will be also
 
+Proposals from graduate students should include a simple recommendation from their professor or advisor
+
 given to applicants who demonstrate knowledge of the taxa involved. The methods, e.g., techniques for capturing images, will be likewise considered in the evaluation. Also, priority will be given to applicants planning to document and photograph the types of Orthoptera species not yet documented by images in OSF, or who are planning to document the types from museums or other collections not easily accessible to researchers. Applications of curators for support of a qualified student to do this under his supervision will also be considered
 
 **Important**: A short financial and tasks report will be required from each grantee once the funding period is finished. The tasks report will be in a format suitable for publishing in Metaleptea.
