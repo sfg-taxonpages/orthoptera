@@ -38,11 +38,7 @@ Funding availability for 2024 will be announced in October 2024.
 
 The proposals should include:
 
-1. Project description (not more than five pages):
-   Title
-   Significance (highlighting the new data that will be added to OSF, preferably to taxa currently lacking images, sound recordings, distribution records, etc.)
-   Objectives, methods and activities
-   Timetable
+1. Project description (not more than five pages): Title. Significance (highlighting the new data that will be added to OSF, preferably to taxa currently lacking images, sound recordings, distribution records, etc.) Objectives, methods and activities. Timetable
 2. If applicable, provide summary of the research project related to the proposal
 3. Curriculum vitae
 4. Budget in US$ (including justification of trips to museums, fieldwork, photographic equipment)
