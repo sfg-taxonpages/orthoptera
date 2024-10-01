@@ -8,5 +8,8 @@
     - label: About
       link: /about
 
+    - label: Recent
+      link: /recent
+
     - label: Help
       link: /help
