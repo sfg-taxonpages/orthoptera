@@ -5,10 +5,10 @@
       <div class="flex gap-4 flex-col">
         <VCard>
           <VCardContent>
-            <h3 class="mt-2 mb-0">OSF Grants 2024</h3>
-            <span class="text-base-soft">2023-12-14</span>
+            <h3 class="mt-2 mb-0">OSF Grants 2025</h3>
+            <span class="text-base-soft">2023-10-02</span>
             <p>
-              Grants awarded for 2024 can be found here
+              Information on call for Grants’ submissions can be found
               <RouterLink to="grants">here</RouterLink>
             </p>
           </VCardContent>
