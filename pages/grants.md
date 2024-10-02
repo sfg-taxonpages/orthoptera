@@ -8,7 +8,7 @@ Grants are available for a project as defined by the applicant. The project must
 
 Funding for 2025 will be for the amount of US$ 50.000. All requested information must be submitted by October 30, 2024 to receive full consideration
 
-The proposals should include:
+### The proposals should include:
 
 1. Project description (not more than five pages): Title. Significance (highlighting the new data that will be added to OSF, preferably to taxa currently lacking images, sound recordings, distribution records, etc.). Objectives, methods and activities. Timetable.
 2. If applicable, provide summary of the research project related to the proposal.
