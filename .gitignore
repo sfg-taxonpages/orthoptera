@@ -6,6 +6,6 @@
 !config
 !config/**
 !public
-!.gitignore
+!public/**
 !README.md
 config/**/*.development.yml

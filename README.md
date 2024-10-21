@@ -10,9 +10,10 @@ TaxonPages software is in active development and changes are expected that will 
 
 1. Click on "Fork" button to create your own repository from this.
 2. Uncheck `Copy the setup branch only` and press `Save`
-3. After create your repo, go to `Settings > Pages`, on "Branch" select `gh-pages` and `/(root)`. Then press save
-4. Open `router.yml` file and change `base_url` to the name of your repository.
-5. After a couple of minutes, your public page should be available at `https://<your_user_name>.github.io/<your_repo_name>`
+3. After create your repo, go to `Settings > Pages`, on "Build and deployment - Source" select `GitHub Actions`.
+4. Go to `Actions` tab and press `I understand my workflows, go ahead and enable them` button
+5. Open `router.yml` file and change `base_url` to the name of your repository.
+6. After a couple of minutes, your public page should be available at `https://<your_user_name>.github.io/<your_repo_name>`
 
 ### Setup
 
@@ -46,14 +47,15 @@ But if you don't want to fork it, you can clone directly from this
 git clone https://github.com/SpeciesFileGroup/taxonpages.git
 ```
 
-3. Go to `taxonpages` folder and switch to `main` branch
+3. Go to `taxonpages` folder and enter the following commands to copy the software to your `setup` branch
 
 ```
-cd taxonpages
 git checkout main
+git checkout setup
+git checkout main .
+git reset
+git checkout .
 ```
-
-4. [Download](https://github.com/SpeciesFileGroup/taxonpages/archive/refs/heads/setup.zip) configuration branch and paste `config` and `pages` folders inside taxonpages folder.
 
 5. Setup `config/api.yml` with the API server configuration
 
@@ -162,25 +164,50 @@ const { project_name } = __APP_ENV__
 const projectName = __APP_ENV__.project_name
 ```
 
-## Panels
 
-### Panel layout
+## Taxa Page
 
-To modify the position of the panels in the layout of the Taxa page, edit the `taxa_page.yml` file
+### Layout
+
+To modify the position of the panels in the layout of the Taxa page, edit the `taxa_page.yml` file. There you can add/move/remove panels from the layout, also you can add new tabs and include new panels there. If you want to make some tabs visible or not depending the rank group, you can include `rankGroup`
 
 ```yaml
-taxa_page_overview:
-  panels:
-    - - - panel:gallery
-        - panel:type
-        - panel:type-specimen
-        - panel:nomenclature
-        - panel:nomenclature-references
+taxa_page:
+  overview:
+    panels:
+      - - - panel:gallery
+          - panel:type
+          - panel:type-specimen
+          - panel:nomenclature
+          - panel:nomenclature-references
 
-      - - panel:map
-        - panel:descendants
-        - panel:content
-        - panel:statistics
+        - - panel:map
+          - panel:descendants
+          - panel:content
+          - panel:statistics
+#
+# An example of a new tab:
+#
+# type_specimens:
+#   rank_group: ['SpeciesGroup']
+#   panels:
+#     - - - panel:specimen-records
+```
+
+### Lifecycle hooks (Experimental feature)
+
+The `onCreatePage` and `onSSRPageCreate` functions allow you to execute code at the time the taxa page is created. `onSSRPageCreate` will be executed only on the server side in SSR mode. To make use of them it is necessary to include them in a file object called `pages/otus.config.js`. Both functions accept `otu`, `taxon`, `route` and `router` objects as parameters. Since `onCreatePage` runs on Taxa page component, it is possible to use hooks like `onMounted` or `onBeforeMount` inside it
+
+```javascript
+export default {
+  onSSRCreatePage: async ({ otu, taxon, route, router }) => {
+    // Your code here
+  },
+
+  onCreatePage: ({ otu, taxon, route, router }) => {
+    // Your code here
+  }
+}
 ```
 
 ### External panels
@@ -195,7 +222,7 @@ import MyPanelComponent from './MyPanelComponent.vue'
 Export default {
    id: 'panel:test', // ID to identify this panel
    component: MyPanelComponent, // Vue component for your panel
-   available: ['HigherClassificationGroup', 'FamilyGroup', 'GenusGroup', 'SpeciesGroup'] // <-- OPTIONAL: This will define for which rank group will be available, remove it if your panel will be available for all.
+   rankGroup: ['HigherClassificationGroup', 'FamilyGroup', 'GenusGroup', 'SpeciesGroup'] // <-- OPTIONAL: This will define for which rank group will be available, remove it if your panel will be available for all.
 }
 ```
 
