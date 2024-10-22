@@ -1,84 +1,40 @@
 <template>
-  <VCard>
-    <VCardHeader>Type specimens</VCardHeader>
-    <VCardContent :class="isLoading && 'min-h-[6rem]'">
-      <VSpinner v-if="isLoading" />
-      <template
-        v-for="item in typeSpecimenRecords"
-        :key="item.id"
-      >
-        <div class="flex justify-between flex-col gap-2 text-sm px-2 py-4">
-          <div class="flex flex-col">
-            <span class="font-medium">{{ item.typeStatus }}</span>
-            <span v-html="makeSpecimenLabel(item)" />
-          </div>
-          <GalleryThumbnailList
-            v-if="item.associatedMedia"
-            :images="item.associatedMedia"
-            class="flex-row flex-wrap gap-2"
-            @select-index="
-              (index) => setCurrentImages(item.associatedMedia, index)
-            "
-          />
-        </div>
-        <hr />
-      </template>
-      <ImageViewer
-        v-if="isViewerVisible"
-        :images="currentImages"
-        :index="currentIndex"
-        :next="currentImages.length - 1 > currentIndex"
-        :previous="currentIndex > 0"
-        @select-index="(index) => (currentIndex = index)"
-        @next="() => currentIndex++"
-        @previous="() => currentIndex--"
-        @close="() => (isViewerVisible = false)"
-      />
-    </VCardContent>
-  </VCard>
-  <VCard v-if="specimenRecords.length">
-    <VCardHeader>Specimen records</VCardHeader>
-    <VCardContent :class="isLoading && 'min-h-[6rem]'">
-      <VSpinner v-if="isLoading" />
-      <template
-        v-for="item in specimenRecords"
-        :key="item.id"
-      >
-        <div class="flex flex-col justify-between text-sm px-2 py-4 gap-2">
-          <div class="flex flex-col">
-            <span>{{ item.typeStatus }}</span>
-            <span v-html="makeSpecimenLabel(item)" />
-          </div>
-          <GalleryThumbnailList
-            v-if="item.associatedMedia"
-            :images="item.associatedMedia"
-            class="lg:flex-row gap-2 flex-wrap"
-            @select-index="
-              (index) => setCurrentImages(item.associatedMedia, index)
-            "
-          />
-        </div>
-        <hr />
-      </template>
-      <ImageViewer
-        v-if="isViewerVisible"
-        :images="currentImages"
-        :index="currentIndex"
-        :next="currentImages.length - 1 > currentIndex"
-        :previous="currentIndex > 0"
-        @select-index="(index) => (currentIndex = index)"
-        @next="() => currentIndex++"
-        @previous="() => currentIndex--"
-        @close="() => (isViewerVisible = false)"
-      />
-    </VCardContent>
-  </VCard>
+  <div class="flex flex-col gap-3">
+    <ListTypeSpecimens
+      v-if="typeSpecimenRecords.length"
+      :list="typeSpecimenRecords"
+      :max="MAX"
+      @select="setCurrentImages"
+    />
+
+    <ListSpecimens
+      :list="specimenRecords"
+      :is-loading="isLoading"
+      :max="MAX"
+      @select="setCurrentImages"
+    />
+
+    <ImageViewer
+      v-if="isViewerVisible"
+      :images="currentImages"
+      :index="currentIndex"
+      :next="currentImages.length - 1 > currentIndex"
+      :previous="currentIndex > 0"
+      @select-index="(index) => (currentIndex = index)"
+      @next="() => currentIndex++"
+      @previous="() => currentIndex--"
+      @close="() => (isViewerVisible = false)"
+    />
+  </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { makeAPIRequest } from '@/utils'
-import GalleryThumbnailList from '@/components/Gallery/GalleryThumbnailList.vue'
+import ListSpecimens from './components/ListSpecimens.vue'
+import ListTypeSpecimens from './components/ListTypeSpecimens.vue'
+
+const MAX = 10
 
 const props = defineProps({
   otuId: {
@@ -106,6 +62,41 @@ const typeSpecimenRecords = computed(() =>
       item.dwc_occurrence_object_type === 'CollectionObject' && item.typeStatus
   )
 )
+
+function loadDwc() {
+  isLoading.value = true
+  makeAPIRequest
+    .get(`/otus/${props.otuId}/inventory/dwc.json`)
+    .then(async ({ headers, data }) => {
+      data.sort((a, b) => {
+        if (a.associatedMedia && !b.associatedMedia) {
+          return -1
+        }
+        if (!a.associatedMedia && b.associatedMedia) {
+          return 1
+        }
+
+        return 0
+      })
+
+      for (let i = 0; i < data.length; i++) {
+        const item = data[i]
+
+        if (item.associatedMedia) {
+          const images = await getMediaImages(item)
+
+          item.associatedMedia = images
+        }
+      }
+      dwcRecords.value = data.map((d) => ({
+        ...d,
+        label: makeSpecimenLabel(d)
+      }))
+    })
+    .finally(() => {
+      isLoading.value = false
+    })
+}
 
 function getLocalityData(data) {
   const area = [
@@ -159,36 +150,7 @@ function getCoordinates({ verbatimCoordinates }) {
   return coordinates ? `(${coordinates})` : ''
 }
 
-onMounted(() => {
-  isLoading.value = true
-  makeAPIRequest
-    .get(`/otus/${props.otuId}/inventory/dwc.json`)
-    .then(async (response) => {
-      response.data.sort((a, b) => {
-        if (a.associatedMedia && !b.associatedMedia) {
-          return -1
-        }
-        if (!a.associatedMedia && b.associatedMedia) {
-          return 1
-        }
-
-        return 0
-      })
-      for (let i = 0; i < response.data.length; i++) {
-        const item = response.data[i]
-
-        if (item.associatedMedia) {
-          const images = await getMediaImages(item)
-
-          item.associatedMedia = images
-        }
-      }
-      dwcRecords.value = response.data
-    })
-    .finally(() => {
-      isLoading.value = false
-    })
-})
+onMounted(loadDwc)
 
 async function getMediaImages(item) {
   const links = item.associatedMedia.split('|')
@@ -209,7 +171,7 @@ async function getMediaImages(item) {
   })
 }
 
-function setCurrentImages(images, index) {
+function setCurrentImages({ images, index }) {
   currentImages.value = images
   currentIndex.value = index
   isViewerVisible.value = true
