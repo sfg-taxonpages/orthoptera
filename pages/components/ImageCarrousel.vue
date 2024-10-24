@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden h-[550px] w-full">
     <img
-      class="object-cover overflow-hidden h-[550px] w-full absolute"
+      class="object-cover overflow-hidden h-[550px] w-full absolute aspect-video"
       :key="currentImage.src"
       :src="currentImage.src"
       alt="Dichroplus maculipennis"
@@ -25,18 +25,6 @@
 
 <script setup>
 import { onMounted, ref, computed } from 'vue'
-import coryacrisAngustipennis from './images/coryacris_angustipennis.jpg'
-import stenopolaPuncticeps from './images/stenopola_puncticeps.jpg'
-import zoniopodaTarsata from './images/zoniopoda_tarsata.jpg'
-import chromacrisSpeciosa from './images/chromacrisSpeciosa.jpg'
-import chibchacrisFernandezi from './images/chibchacrisFernandezi.jpg'
-import chlorobaliusLeucoviridis from './images/chlorobaliusLeucoviridis.jpg'
-import aerotegminaVociferator from './images/aerotegminaVociferator.jpg'
-import liladownsiaFraile from './images/liladownsiaFraile.jpg'
-import lebinthusLuae from './images/lebinthusLuae.jpg'
-import typophyllumInflatum from './images/typophyllumInflatum.jpg'
-import xenicolaDohrni from './images/xenicolaDohrni.jpg'
-import acanthacrisRuficornisCitrina from './images/acanthacrisRuficornisCitrina.jpg'
 
 const props = defineProps({
   duration: {
@@ -49,74 +37,74 @@ const images = [
   {
     label: 'Acanthacris ruficornis citrina',
     copyright: 'Michel Lecoq',
-    src: acanthacrisRuficornisCitrina,
+    src: 'images/home/acanthacrisRuficornisCitrina.avif',
     otuId: 819322
   },
   {
     label: 'Typophyllum inflatum',
     copyright: 'Holger Braun',
-    src: typophyllumInflatum,
+    src: 'images/home/typophyllumInflatum.avif',
     otuId: 850435
   },
   {
     label: 'Xenicola dohrni',
     copyright: 'Holger Braun',
-    src: xenicolaDohrni,
+    src: 'images/home/xenicolaDohrni.avif',
     otuId: 848543
   },
   {
     label: 'Lebinthus luae',
     copyright: 'Ming Kai Tan',
-    src: lebinthusLuae,
+    src: 'images/home/lebinthusLuae.avif',
     otuId: 831633
   },
   {
     label: 'Liladownsia fraile',
     copyright: 'Ricardo Mariño-Pérez',
-    src: liladownsiaFraile,
+    src: 'images/home/liladownsiaFraile.avif',
     otuId: 816243
   },
   {
     label: 'Aerotegmina vociferator',
     copyright: 'Claudia Hemp',
-    src: aerotegminaVociferator,
+    src: 'images/home/aerotegminaVociferator.avif',
     otuId: 850176
   },
   {
     label: 'Chlorobalius leucoviridis',
     copyright: 'David Rentz',
-    src: chlorobaliusLeucoviridis,
+    src: 'images/home/chlorobaliusLeucoviridis.avif',
     otuId: 850075
   },
 
   {
     label: 'Chromacris speciosa',
-    src: chromacrisSpeciosa,
+    src: 'images/home/chromacrisSpeciosa.avif',
     copyright: 'Cigliano, M.M',
     otuId: 823304
   },
   {
     label: 'Chibchacris fernandezi',
-    src: chibchacrisFernandezi,
+    src: 'images/home/chibchacrisFernandezi.avif',
     copyright: 'Cigliano, M.M',
     otuId: 816353
   },
   {
     label: 'Coryacris angustipennis',
-    src: coryacrisAngustipennis,
+    src: 'images/home/coryacris_angustipennis.avif',
     copyright: 'Cigliano, M.M',
     otuId: 823314
   },
   {
     label: 'Stenopola puncticeps',
     copyright: 'Cigliano, M.M',
-    src: stenopolaPuncticeps,
+    src: 'images/home/stenopola_puncticeps.avif',
     otuId: 820284
   },
   {
     label: 'Zoniopoda tarsata',
     copyright: 'Cigliano, M.M',
-    src: zoniopodaTarsata,
+    src: 'images/home/zoniopoda_tarsata.avif',
     otuId: 823378
   }
 ]
