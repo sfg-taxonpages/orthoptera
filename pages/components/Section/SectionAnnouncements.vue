@@ -1,6 +1,9 @@
 <template>
   <section>
-    <div class="mx-auto py-6 prose !container dark:prose-invert">
+    <div
+      class="mx-auto py-6 prose !container dark:prose-invert"
+      id="announcements"
+    >
       <h2 class="px-4 sm:px-0">Announcements</h2>
       <div class="flex gap-4 flex-col">
         <VCard>
