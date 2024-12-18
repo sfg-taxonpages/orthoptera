@@ -6,6 +6,14 @@
     >
       <h2 class="px-4 sm:px-0">Announcements</h2>
       <div class="flex gap-4 flex-col">
+
+        <VCard>
+          <VCardContent>
+            <h3 class="mt-2 mb-0">IMPORTANT: OSF could be down or be only partially working between January 6th-15th (servers at the University of Illinois undergoing power upgrade).</h3>
+            <span class="text-base-soft">2024-12-18</span>
+          </VCardContent>
+        </VCard>
+
         <VCard>
           <VCardContent>
             <h3 class="mt-2 mb-0">OSF Grants 2025</h3>
