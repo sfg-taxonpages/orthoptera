@@ -15,6 +15,7 @@ taxa_page:
           - panel:etymology
           - panel:gbif
           - panel:statistics
+          - panel:sounds
   specimen_records:
     rank_group: ['SpeciesGroup']
     panels:
