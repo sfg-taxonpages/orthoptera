@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import axios from 'axios'
 
 const props = defineProps({
@@ -69,13 +69,17 @@ const pagination = ref({
   total_results: 0
 })
 
+const taxonName = computed(() =>
+  props.taxon.expanded_name.replace(/\s*\([^)]+\)/g, '')
+)
+
 function loadObservations(parameters = {}) {
   isLoading.value = true
 
   axios
     .get(`https://api.inaturalist.org/v1/observations`, {
       params: {
-        taxon_name: props.taxon.expanded_name,
+        taxon_name: taxonName.value,
         ...parameters
       }
     })
