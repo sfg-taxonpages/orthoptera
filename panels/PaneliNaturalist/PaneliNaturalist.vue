@@ -58,6 +58,11 @@ const props = defineProps({
   perPage: {
     type: Number,
     default: 60
+  },
+
+  parameters: {
+    type: Object,
+    default: () => {}
   }
 })
 
@@ -73,14 +78,15 @@ const taxonName = computed(() =>
   props.taxon.expanded_name.replace(/\s*\([^)]+\)/g, '')
 )
 
-function loadObservations(parameters = {}) {
+function loadObservations(params = {}) {
   isLoading.value = true
 
   axios
     .get(`https://api.inaturalist.org/v1/observations`, {
       params: {
         taxon_name: taxonName.value,
-        ...parameters
+        ...params,
+        ...props.parameters
       }
     })
     .then(({ data }) => {
