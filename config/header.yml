@@ -11,6 +11,9 @@ header_links:
   - label: About
     link: /about
 
+  - label: Bibliography
+    link: /bibliography
+
   - label: Recent
     link: /recent
 
