@@ -8,14 +8,17 @@ header_links:
   - label: Announcements (1)
     link: /#announcements
 
-  - label: About
-    link: /about
+  - label: Search DwC
+    link: /resources/tw/filter/dwc_otus
 
   - label: Bibliography
-    link: /bibliography
+    link: /resources/tw/filter/bibliography
 
   - label: Recent
     link: /recent
+
+  - label: About
+    link: /about
 
   - label: Help
     link: /help
