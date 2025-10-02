@@ -6,14 +6,22 @@
     >
       <h2 class="px-4 sm:px-0">Announcements</h2>
       <div class="flex gap-4 flex-col">
+        <VCard>
+          <VCardContent>
+            <h3 class="mt-2 mb-0">New! Advanced Bibliography Search</h3>
+            <span class="text-base-soft">2025-10-01</span>
+            <p>
+              Search anywhere in a citation and filter by author, type, or year.
+            </p>
+          </VCardContent>
+        </VCard>
 
         <VCard>
           <VCardContent>
-            <h3 class="mt-2 mb-0">OSF Grants 2025</h3>
-            <span class="text-base-soft">2024-12-16</span>
+            <h3 class="mt-2 mb-0">New! Darwin Core Search</h3>
+            <span class="text-base-soft">2025-10-01</span>
             <p>
-              Information on projects funded for 2025 can be found
-              <RouterLink to="grants">here</RouterLink>
+              Filter OTUs by scientific name, author, type, and distribution.
             </p>
           </VCardContent>
         </VCard>
