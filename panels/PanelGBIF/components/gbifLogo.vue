@@ -34,7 +34,7 @@
 
 <style scoped>
 .cls-1 {
-  fill: #231f20;
+  fill: rgb(var(--color-base-content));
 }
 .cls-2 {
   fill: #4c9c2e;
