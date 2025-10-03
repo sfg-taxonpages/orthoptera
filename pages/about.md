@@ -54,9 +54,9 @@ The Governance Committee members are appointed by the Director of the database w
 - María Marta Cigliano, Division Entomología, Museo de la Plata, CEPAVE-CONICET, La Plata, Argentina
 - Holger Braun, Division Entomología, Museo de la Plata, La Plata, Argentina
 - Claudia Hemp, University of Bayreuth, Bayreuth, Germany
-- Sigfrid Ingrisch, Zoologisches Forschungsinstitut und Museum Alexander Koenig, Bonn, Germany
+- Ming Kai Tan, Chian Natural History Museum, Singapore
 - Michel Lecoq, Past President, Orthopterists’ Society; Manager, The Ted Cohn Research Fund; Subject Editor, Journal of Orthoptera Research; France
-- Hugh Rowell, Ayer, Switzerland
+- Pedro Souza-Dias , Museu Nacional, Universidade Federal do Rio de Janeiro, Brazil
 - Tony Robillard, Institut Systématique Evolution Biodiversité (ISYEB), Muséum national d’Histoire naturelle, Paris, France
 - Hojun Song, Department of Entomology, Ecology & Evolutionary Biology IDP, Texas A&M University, College Station, Texas, USA
 
