@@ -8,6 +8,17 @@
       <div class="flex gap-4 flex-col">
         <VCard>
           <VCardContent>
+            <h3 class="mt-2 mb-0">OSF Grants 2026</h3>
+            <span class="text-base-soft">2025-10-08</span>
+            <p>
+              Information on projects funded for 2026 can be found
+              <RouterLink to="grants">here</RouterLink>
+            </p>
+          </VCardContent>
+        </VCard>
+
+        <VCard>
+          <VCardContent>
             <h3 class="mt-2 mb-0">New! Advanced Bibliography Search</h3>
             <span class="text-base-soft">2025-10-01</span>
             <p>
