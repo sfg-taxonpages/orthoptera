@@ -11,7 +11,7 @@
             <h3 class="mt-2 mb-0">OSF Grants 2026</h3>
             <span class="text-base-soft">2025-10-08</span>
             <p>
-              Information on projects funded for 2026 can be found
+              Information on grants applications can be found
               <RouterLink to="grants">here</RouterLink>
             </p>
           </VCardContent>
