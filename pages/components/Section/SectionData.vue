@@ -51,32 +51,32 @@ const dataTypes = shallowRef({
   [TYPES.validSpecies]: {
     icon: IconOk,
     label: 'Valid species',
-    count: 29410
+    count: 30528
   },
   [TYPES.validExtantSpecies]: {
     icon: IconOk,
     label: 'Valid extant species',
-    count: 28955
+    count: 29568
   },
   [TYPES.taxonNames]: {
     icon: IconMicroscope,
     label: 'Scientific names',
-    count: 47350
+    count: 76639
   },
   [TYPES.projectSources]: {
     icon: IconReference,
     label: 'References',
-    count: 15500
+    count: 17035
   },
   [TYPES.citations]: {
     icon: IconCitation,
     label: 'Citations',
-    count: 250000
+    count: 530698
   },
   [TYPES.images]: {
     icon: IconImage,
     label: 'Images',
-    count: 107700
+    count: 119328
   },
   [TYPES.mediaSounds]: {
     icon: IconAudio,
@@ -86,54 +86,56 @@ const dataTypes = shallowRef({
   [TYPES.collectionObjects]: {
     icon: IconBug,
     label: 'Specimen records',
-    count: 108000
+    count: 98560
   }
-})
-
-makeAPIRequest('/stats').then((response) => {
-  const { data } = response.data
-
-  for (const key in data) {
-    if (dataTypes.value[key]) {
-      dataTypes.value[key].count = data[key]
-    }
-  }
-
-  triggerRef(dataTypes)
 })
 
 async function loadSpeciesCount() {
-  await makeAPIRequest('/taxon_names.json', {
-    params: {
-      page: 1,
-      per: 1,
-      validity: true,
-      rank: ['NomenclaturalRank::Iczn::SpeciesGroup::Species']
-    }
-  }).then(({ headers }) => {
-    dataTypes.value[TYPES.validSpecies].count = Number(
-      headers['pagination-total']
-    )
-  })
+  const promises = [
+    makeAPIRequest('/stats').then((response) => {
+      const { data } = response.data
 
-  await makeAPIRequest('/taxon_names.json', {
-    params: {
-      page: 1,
-      per: 1,
-      taxon_name_id: [913531],
-      taxon_name_classification: ['TaxonNameClassification::Iczn::Fossil'],
-      validity: true,
-      descendants: true,
-      nomenclature_group: ['Species'],
-      rank: ['NomenclaturalRank::Iczn::SpeciesGroup::Species']
-    }
-  }).then(({ headers }) => {
-    dataTypes.value[TYPES.validExtantSpecies].count =
-      dataTypes.value[TYPES.validSpecies].count -
-      Number(headers['pagination-total'])
-  })
+      for (const key in data) {
+        if (dataTypes.value[key]) {
+          dataTypes.value[key].count = data[key]
+        }
+      }
+    }),
 
-  triggerRef(dataTypes)
+    makeAPIRequest('/taxon_names.json', {
+      params: {
+        page: 1,
+        per: 1,
+        validity: true,
+        rank: ['NomenclaturalRank::Iczn::SpeciesGroup::Species']
+      }
+    }).then(({ headers }) => {
+      dataTypes.value[TYPES.validSpecies].count = Number(
+        headers['pagination-total']
+      )
+    }),
+
+    makeAPIRequest('/taxon_names.json', {
+      params: {
+        page: 1,
+        per: 1,
+        taxon_name_id: [913531],
+        taxon_name_classification: ['TaxonNameClassification::Iczn::Fossil'],
+        validity: true,
+        descendants: true,
+        nomenclature_group: ['Species'],
+        rank: ['NomenclaturalRank::Iczn::SpeciesGroup::Species']
+      }
+    }).then(({ headers }) => {
+      dataTypes.value[TYPES.validExtantSpecies].count =
+        dataTypes.value[TYPES.validSpecies].count -
+        Number(headers['pagination-total'])
+    })
+  ]
+
+  Promise.all(promises).then(() => {
+    triggerRef(dataTypes)
+  })
 }
 
 onMounted(() => {
