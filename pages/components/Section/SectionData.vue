@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { shallowRef, triggerRef } from 'vue'
+import { onMounted, shallowRef, triggerRef } from 'vue'
 import { makeAPIRequest } from '@/utils/request'
 
 import IconAudio from '../Icon/IconAudio.vue'
@@ -136,5 +136,7 @@ async function loadSpeciesCount() {
   triggerRef(dataTypes)
 }
 
-loadSpeciesCount()
+onMounted(() => {
+  loadSpeciesCount()
+})
 </script>
