@@ -9,7 +9,7 @@
         <VCard>
           <VCardContent>
             <h3 class="mt-2 mb-0">OSF Grants 2026</h3>
-            <span class="text-base-soft">2025-10-08</span>
+            <span class="text-base-soft">2025-12-17</span>
             <p>
               Information on Grants funded for 2026 can be found
               <RouterLink to="grants">here</RouterLink>
