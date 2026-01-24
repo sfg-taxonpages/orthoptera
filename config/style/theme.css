@@ -2,8 +2,9 @@
   --color-primary: 5, 150, 105;
   --color-primary-content: 255, 255, 255;
 
-  --color-secondary: 2, 132, 199;
+  --color-secondary: 3, 105, 161;
   --color-secondary-content: 255, 255, 255;
+  --color-secondary-on-dark: 56, 189, 248;
 
   --color-base-foreground: 255, 255, 255;
   --color-base-background: 245, 247, 251;
