@@ -25,6 +25,7 @@
             <img
               :key="observation.observation_photos[0].photo.id"
               :src="observation.observation_photos[0].photo.url"
+              :alt="`iNaturalist observation ${observation.id}`"
             />
           </a>
         </div>
