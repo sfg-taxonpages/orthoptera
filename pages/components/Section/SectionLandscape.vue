@@ -12,7 +12,7 @@
             >Taxonomic database of the world's grasshoppers, locusts, katydids,
             crickets, and related insects</span
           >
-          <div class="p-4 bg-black bg-opacity-25 w-full max-w-lg box-border">
+          <div class="p-3 bg-black bg-opacity-20 w-full max-w-lg box-border rounded-lg">
             <AutocompleteOtu
               autofocus
               class="w-full"
