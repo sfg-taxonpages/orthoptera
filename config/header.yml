@@ -14,6 +14,9 @@ header_links:
   - label: Bibliography
     link: /resources/tw/filter/bibliography
 
+  - label: Taxa
+    link: /otus/805980
+
   - label: Recent
     link: /recent
 
