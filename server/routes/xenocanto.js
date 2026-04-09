@@ -14,8 +14,6 @@ export default function ({ env, router }) {
       key: env.TAXONPAGES_XENO_CANTO_API_KEY
     })
 
-    console.log(decodeURIComponent(params.toString()))
-
     const response = await fetch(
       `https://xeno-canto.org/api/3/recordings?${decodeURIComponent(params.toString())}`
     )
