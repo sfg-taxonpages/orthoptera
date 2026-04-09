@@ -5,8 +5,8 @@ header_links:
   - label: Home
     link: /
 
-  - label: Announcements (3)
-    link: /#announcements
+  - label: News
+    link: /news
 
   - label: Search DwC
     link: /resources/tw/filter/dwc_otus

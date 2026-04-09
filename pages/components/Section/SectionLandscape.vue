@@ -3,7 +3,7 @@
     <div class="relative box-border">
       <ImageCarrousel>
         <div
-          class="flex flex-col justify-center sm:items-center w-full h-full gap-4 bg-black bg-opacity-25"
+          class="flex flex-col justify-center sm:items-center w-full h-full gap-4 bg-black/25"
         >
           <span class="text-3xl sm:text-4xl px-4 font-medium text-white">{{
             project_name
@@ -12,7 +12,7 @@
             >Taxonomic database of the world's grasshoppers, locusts, katydids,
             crickets, and related insects</span
           >
-          <div class="p-3 bg-black bg-opacity-20 w-full max-w-lg box-border rounded-lg">
+          <div class="p-3 bg-black/20 w-full max-w-lg box-border rounded-lg">
             <AutocompleteOtu
               autofocus
               class="w-full"

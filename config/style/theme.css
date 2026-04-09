@@ -1,33 +1,37 @@
 :root {
-  --color-primary: 4, 120, 87;
-  --color-primary-content: 255, 255, 255;
+  --tp-primary: rgb(4, 120, 87);
+  --tp-primary-content: rgb(255, 255, 255);
 
-  --color-secondary: 3, 105, 161;
-  --color-secondary-content: 255, 255, 255;
-  --color-secondary-on-dark: 56, 189, 248;
+  --tp-secondary: rgb(3, 105, 161);
+  --tp-secondary-content: rgb(255, 255, 255);
+  --tp-secondary-on-dark: rgb(56, 189, 248);
 
-  --color-base-foreground: 255, 255, 255;
-  --color-base-background: 245, 247, 251;
-  --color-base-muted: 226, 232, 240;
-  --color-base-border: 203, 213, 225;
-  --color-base-content: 0, 0, 0;
+  --tp-base-foreground: rgb(255, 255, 255);
+  --tp-base-background: rgb(245, 247, 251);
+  --tp-base-muted: rgb(226, 232, 240);
+  --tp-base-border: rgb(203, 213, 225);
+  --tp-base-content: rgb(0, 0, 0);
 
-  --color-map-georeference: 239, 68, 68;
-  --color-map-asserted: 249, 115, 22;
-  --color-map-type-material: 51, 136, 255;
-  --color-map-collection-object: 239, 68, 68;
+  --tp-map-georeference: rgb(239, 68, 68);
+  --tp-map-asserted: rgb(249, 115, 22);
+  --tp-map-type-material: rgb(51, 136, 255);
+  --tp-map-collection-object: rgb(239, 68, 68);
+
+  --tp-footer-background: rgb(39 39 42);
 }
 
 .dark {
-  --color-primary: 23, 23, 23;
-  --color-primary-content: 255, 255, 255;
-  
-  --color-secondary: 14, 165, 233;
-  --color-secondary-content: 255, 255, 255;
+  --tp-primary: rgb(23, 23, 23);
+  --tp-primary-content: rgb(255, 255, 255);
 
-  --color-base-background: 23, 23, 23;
-  --color-base-foreground: 38, 38, 38;
-  --color-base-muted: 48, 48, 48;
-  --color-base-border: 38, 38, 38;
-  --color-base-content: 255, 255, 255;
+  --tp-secondary: rgb(14, 165, 233);
+  --tp-secondary-content: rgb(255, 255, 255);
+
+  --tp-base-background: rgb(23, 23, 23);
+  --tp-base-foreground: rgb(38, 38, 38);
+  --tp-base-muted: rgb(48, 48, 48);
+  --tp-base-border: rgb(38, 38, 38);
+  --tp-base-content: rgb(255, 255, 255);
+
+  --tp-footer-background: rgb(39 39 42);
 }

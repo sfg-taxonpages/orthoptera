@@ -1,3 +1,4 @@
+---
 taxa_page:
   overview:
     panels:
@@ -6,7 +7,6 @@ taxa_page:
           - panel:type-specimen
           - panel:nomenclature
           - panel:nomenclature-references
-
         - - panel:map
           - panel:descendants
           - panel:scrutiny
@@ -17,23 +17,33 @@ taxa_page:
           - panel:statistics
           - panel:sounds
   specimen_records:
-    rank_group: ['SpeciesGroup']
+    rank_group:
+      - SpeciesGroup
     panels:
       - - - panel:specimen-records
   field_occurrences:
-    rank_group: ['SpeciesGroup']
+    rank_group:
+      - SpeciesGroup
     panels:
       - - - panel:field-occurrences
   inaturalist:
-    label: 'iNaturalist'
-    rank_group: ['GenusGroup', 'SpeciesGroup']
+    label: iNaturalist
+    rank_group:
+      - GenusGroup
+      - SpeciesGroup
     panels:
       - - - id: panel:inaturalist
             bind:
               parameters:
-                taxon_id: 47651 # The `taxon_id` parameter is used as a scope to limit the search to the Orthoptera order.
+                taxon_id: 47651
+              thumbnailSize: medium
+              iconicTaxa: Insecta
   xenocanto:
-    label: 'xeno-canto'
-    rank_group: ['GenusGroup', 'SpeciesGroup']
+    label: Xeno-Canto
+    rank_group:
+      - GenusGroup
+      - SpeciesGroup
     panels:
-      - - - panel:xeno-canto
+      - - - id: panel:xeno-canto
+            bind:
+              apiUrl: /api/xenocanto/recordings
