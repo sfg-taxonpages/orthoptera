@@ -6,7 +6,7 @@
       :src="currentImage.src"
       alt="Dichroplus maculipennis"
     />
-    <div class="bg-black bg-opacity-25 absolute h-full w-full top-0">
+    <div class="bg-black/25 absolute h-full w-full top-0">
       <slot />
     </div>
     <div class="absolute bottom-2 right-4">

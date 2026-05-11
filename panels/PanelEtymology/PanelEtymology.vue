@@ -15,7 +15,7 @@
       </span>
 
       <template v-if="taxon.etymology">
-        <hr class="my-4" />
+        <hr class="my-4 border-base-border" />
         Etymology: <span v-html="md.render(taxon.etymology)" />
       </template>
     </VCardContent>

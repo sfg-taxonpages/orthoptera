@@ -17,9 +17,9 @@ If you find apparent errors in this new version, please compare with the data in
 ## Dig deeper in OSF
 
 The TaxonWorks interfaces encompass a wide range of additional filtering and reporting functionalities.
-If you require extended access to the data, please reach out to us at [<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />;
-<address-maker class="font-medium"  :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />]. For guidance on using filters in TaxonWorks, refer to the help document
-available [here](https://docs.google.com/document/d/1Ser_9uG31b-zL4YcPJrafZ19BnNCenh-S2zBcsIjLio/).
+If you require extended access to the data, please reach out to us at [<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />; <address-maker class="font-medium"  :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />].
+
+For guidance on using filters in TaxonWorks, refer to the help document available [here](https://docs.google.com/document/d/1Ser_9uG31b-zL4YcPJrafZ19BnNCenh-S2zBcsIjLio/).
 Over time, we anticipate that this site will progressively incorporate the extended functionalities present
 in TaxonWorks. If you have any comments or questions regarding the database, you can contact María
 Marta Cigliano (<address-maker class="font-medium" :items="['cigliano', 'fcnym', 'unlp', 'edu', 'ar']" />) or Holger Braun (<address-maker class="font-medium" :items="['braun', 'fcnym', 'unlp', 'edu', 'ar']" />), or for
