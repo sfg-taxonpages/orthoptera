@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install latest TaxonPages version
+        run: npm install @sfgrp/taxonpages
+
       - name: Build public view
         run: npm run build
 
