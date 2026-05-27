@@ -21,7 +21,7 @@
 }
 
 .dark {
-  --tp-primary: rgb(23, 23, 23);
+/*   --tp-primary: rgb(23, 23, 23);
   --tp-primary-content: rgb(255, 255, 255);
 
   --tp-secondary: rgb(14, 165, 233);
@@ -33,5 +33,5 @@
   --tp-base-border: rgb(38, 38, 38);
   --tp-base-content: rgb(255, 255, 255);
 
-  --tp-footer-background: rgb(39 39 42);
+  --tp-footer-background: rgb(39 39 42); */
 }
