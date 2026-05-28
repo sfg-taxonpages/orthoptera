@@ -34,7 +34,7 @@
 
 <style scoped>
 .cls-1 {
-  fill: rgb(var(--tp-base-content));
+  fill: var(--tp-base-content);
 }
 .cls-2 {
   fill: #4c9c2e;
