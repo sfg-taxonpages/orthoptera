@@ -11,5 +11,36 @@
   --tp-map-type-material: rgb(51, 136, 255);
   --tp-map-collection-object: rgb(239, 68, 68);
 
-  --tp-footer-background: rgb(39 39 42);
+  --tp-footer-background: rgb(39, 39, 42);
+}
+
+
+.dark {
+  --tp-primary: rgb(9, 9, 11);
+  --tp-primary-content: rgb(244, 244, 245);
+
+  --tp-secondary: rgb(14, 165, 233);
+  --tp-secondary-content: rgb(9, 9, 11);
+
+  --tp-base-background: rgb(9, 9, 11);
+  --tp-base-foreground: rgb(24, 24, 27);
+  --tp-base-muted: rgb(39, 39, 42);
+  --tp-base-soft: rgb(161, 161, 170);
+  --tp-base-lighter: rgb(212, 212, 216);
+  --tp-base-border: rgb(39, 39, 42);
+  --tp-base-content: rgb(244, 244, 245);
+
+  --tp-card-shadow: rgba(0, 0, 0, 0.3);
+  --tp-card-border: rgba(244, 244, 245, 0.08);
+  --tp-shadow-sm: rgba(0, 0, 0, 0.4);
+  --tp-tree-line: rgb(82, 82, 91);
+
+  --tp-footer-background: rgb(24, 24, 27);
+  --tp-footer-content: rgb(244, 244, 245);
+  --tp-footer-link: rgb(161, 161, 170);
+  --tp-footer-link-hover: rgb(244, 244, 245);
+  --tp-footer-border: rgb(39, 39, 42);
+
+  --tp-scrollbar-thumb: rgb(63, 63, 70);
+  --tp-scrollbar-track: rgb(24, 24, 27);
 }
