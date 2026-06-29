@@ -39,7 +39,10 @@ The Editorial Board includes authors whose main task is to add new data based on
 
 ### Editorial policy
 
-The classification and nomenclature of the database reflect the most recent published information following the rules of the International Code of Zoological Nomenclature (ICZN). If a change in classification depends on subjective judgment, and the matter is of sufficient interest that conflicting opinions are likely to be published; then the authors may delay entering the change until a predominant opinion emerges from multiple authors. Controversial issues are resolved by the OSF Governance Committee. However, each conflicting citation is entered with a note giving the opinion of that author. Annual archival copies readily available at [Catalogue of life](https://www.catalogueoflife.org/).
+The Orthoptera Species File (OSF) serves as a nomenclatural repository following the International Code of Zoological Nomenclature (ICZN), a taxonomic reference resource, and a dynamic record of published taxonomic literature.
+Nomenclatural acts regulated by the ICZN are normally incorporated following publication.
+Taxonomic and classificatory hypotheses may involve differing interpretations and competing hypotheses. Such changes are generally incorporated following publication, but OSF may provide annotations, document alternative classifications, or temporarily delay implementation in exceptional cases involving substantial controversy or concerns about stability. Relevant specialists and the Governance Committee may be consulted when needed.
+The Governance Committee does not determine which taxonomic hypothesis is correct, but may assist in ensuring transparency, consistency, and stability in the application of this policy. Annual archival copies readily available at [Catalogue of life](https://www.catalogueoflife.org/).
 
 ### 2. Governance Committee
 
