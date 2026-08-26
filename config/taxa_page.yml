@@ -6,7 +6,9 @@ taxa_page:
           - panel:type
           - panel:type-specimen
           - panel:nomenclature
-          - panel:nomenclature-references
+          - id: panel:nomenclature-references
+            bind:
+              title: References
         - - panel:map
           - panel:descendants
           - panel:scrutiny
