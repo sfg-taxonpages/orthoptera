@@ -7,11 +7,15 @@
         <li
           v-for="item in items"
           :key="item.id"
-          class="flex flex-col text-sm px-2 py-4 gap-2 border-b first:pt-0 last:pb-0 last:border-none"
+          class="flex flex-col text-sm px-2 py-4 gap-2 border-b border-base-muted first:pt-0 last:pb-0 last:border-none"
         >
           <div class="flex flex-col">
             <span>{{ item.typeStatus }}</span>
             <span v-html="item.label" />
+            <span
+              v-if="item.links"
+              v-html="item.links"
+            />
           </div>
           <GalleryThumbnailList
             v-if="item.associatedMedia"

@@ -23,7 +23,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { makeAPIRequest } from '@/utils'
+import { makeAPIRequest, isValidUrl, sanitizeAndLinkifyHtml } from '@/utils'
 import ListOccurrences from './components/ListOccurrences.vue'
 
 const MAX = 10
@@ -71,7 +71,8 @@ function loadDwc() {
         .filter((item) => item.dwc_occurrence_object_type === 'FieldOccurrence')
         .map((d) => ({
           ...d,
-          label: makeFieldOccurrenceLabel(d)
+          label: makeFieldOccurrenceLabel(d),
+          links: getOtherCatalogLinks(d)
         }))
     })
     .finally(() => {
@@ -107,6 +108,17 @@ function getCountAndSex({ individualCount, sex }) {
   return sex
     ? `${individualCount} ${sex}`
     : `${individualCount} occurrence${individualCount > 1 ? 's' : ''}`
+}
+
+function getOtherCatalogLinks({ otherCatalogNumbers }) {
+  if (!otherCatalogNumbers) return ''
+
+  return otherCatalogNumbers
+    .split('|')
+    .map((value) => value.trim())
+    .filter((value) => /^https?:\/\//i.test(value) && isValidUrl(value))
+    .map((value) => sanitizeAndLinkifyHtml(value))
+    .join(', ')
 }
 
 function getCollector({ recordedBy }) {

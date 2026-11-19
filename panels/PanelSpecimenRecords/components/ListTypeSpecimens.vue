@@ -12,6 +12,10 @@
           <div class="flex flex-col">
             <span class="font-medium">{{ item.typeStatus }}</span>
             <span v-html="item.label" />
+            <span
+              v-if="item.links"
+              v-html="item.links"
+            />
           </div>
           <GalleryThumbnailList
             v-if="item.associatedMedia"

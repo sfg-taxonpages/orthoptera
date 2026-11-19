@@ -30,7 +30,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { makeAPIRequest } from '@/utils'
+import { makeAPIRequest, isValidUrl, sanitizeAndLinkifyHtml } from '@/utils'
 import ListSpecimens from './components/ListSpecimens.vue'
 import ListTypeSpecimens from './components/ListTypeSpecimens.vue'
 
@@ -90,7 +90,8 @@ function loadDwc() {
       }
       dwcRecords.value = data.map((d) => ({
         ...d,
-        label: makeSpecimenLabel(d)
+        label: makeSpecimenLabel(d),
+        links: getOtherCatalogLinks(d)
       }))
     })
     .finally(() => {
@@ -138,6 +139,17 @@ function getCountAndSex({ individualCount, sex }) {
   return sex
     ? `${individualCount} ${sex}`
     : `${individualCount} specimen${individualCount > 1 ? 's' : ''}`
+}
+
+function getOtherCatalogLinks({ otherCatalogNumbers }) {
+  if (!otherCatalogNumbers) return ''
+
+  return otherCatalogNumbers
+    .split('|')
+    .map((value) => value.trim())
+    .filter((value) => /^https?:\/\//i.test(value) && isValidUrl(value))
+    .map((value) => sanitizeAndLinkifyHtml(value))
+    .join(', ')
 }
 
 function getCollector({ recordedBy }) {
